@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-material-design-dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap-material-design-dist/js/bootstrap-material-design.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</head>
+<body>
+<div class="head">
+    <nav class="d-flex justify-content-between align-items-center bg-black investinder-header">
+        <a class="navbar-brand" href="main-page.html">
+            <div class="investinder-logo">
+                <i class="horse-icon"></i>
+            </div>
+            <p class="brand-name">INVESTINDER</p>
+        </a>
+        <div id="investinder-toggler" onclick="togglePageList()">
+            <span class="investinder-toggle-icon" id="navigation-open"></span>
+            <span class="investinder-close-icon" id="navigation-close"></span>
+        </div>
+    </nav>
+    <div id="navigation-page-list" class="flex-column justify-content-between">
+        <ul class="navigation-blocks list-unstyled active" id="unauth-navigation">
+            <li class="navigation-path">
+                <a href="">Войти в аккаунт</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Искать инвестора</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Смотреть проекты</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Цены</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Блог</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Обратная связь</a>
+            </li>
+        </ul>
+        <ul class="navigation-blocks list-unstyled" id="auth-navigation">
+            <li class="navigation-path yellow-label">
+                <a href="">Добавить проект</a>
+            </li>
+            <li class="navigation-path blue-label">
+                <a href="">Предложить инвестиции</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Личный кабинет</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Искать инвестора</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Смотреть проекты</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Цены</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Блог</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Обратная связь</a>
+            </li>
+        </ul>
+        <div class="information d-flex flex-column">
+            <a href="" class="information-block">Политика конфиденциальности</a>
+            <a href="" class="information-block">О проекте</a>
+            <a href="" class="information-block">Контакты</a>
+        </div>
+    </div>
+</div>
+<div class="body">
+    <div id="login-form">
+        <h1 id="login-form-title" class="mb-4">Вход в личный кабинет</h1>
+        <form>
+            <div class="form-group mb-4">
+                <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp" placeholder="Email">
+            </div>
+            <div class="form-group mb-4">
+                <input type="password" class="form-control" id="login-password" placeholder="Пароль">
+            </div>
+            <a href="" class="text-right d-block" id="forgot-password">Забыли пароль?</a>
+            <button class="mt-4 mb-4 btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
+                    onclick="login(); return false;">
+                Войти
+            </button>
+            <a href="./registration.html" id="registration" class="d-block">Регистрация</a>
+        </form>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@media (max-height: 798px) {
+    .find-investor-block, .find-project-block {
+        padding: 0 20px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .find-investor .block-headliner, .find-project .block-headliner,
+    .find-investor .block-description, .find-project .block-subdescription, .find-investor .block-subdescription,
+    .find-project button, .find-investor button {
+        margin-bottom: 0;
+    }
+
+    #navigation-page-list {
+        overflow: scroll;
+    }
+
+    .find-investor .block-headliner, .find-project .block-headliner {
+        font-size: 23px;
+    }
+
+    .find-investor .block-description {
+        font-size: 15px;
+    }
+
+    .find-project .block-subdescription, .find-investor .block-subdescription {
+        font-size: 12px;
+    }
+
+}
