@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-material-design-dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap-material-design-dist/js/bootstrap-material-design.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</head>
+<body>
+<div class="head">
+    <nav class="d-flex justify-content-between align-items-center bg-black investinder-header">
+        <a class="navbar-brand" href="main-page.html">
+            <div class="investinder-logo">
+                <i class="horse-icon"></i>
+            </div>
+            <p class="brand-name">INVESTINDER</p>
+        </a>
+        <div id="investinder-toggler" onclick="togglePageList()">
+            <span class="investinder-toggle-icon" id="navigation-open"></span>
+            <span class="investinder-close-icon" id="navigation-close"></span>
+        </div>
+    </nav>
+    <div id="navigation-page-list" class="flex-column justify-content-between">
+        <ul class="navigation-blocks list-unstyled active" id="unauth-navigation">
+            <li class="navigation-path">
+                <a href="">Войти в аккаунт</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Искать инвестора</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Смотреть проекты</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Цены</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Блог</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Обратная связь</a>
+            </li>
+        </ul>
+        <ul class="navigation-blocks list-unstyled" id="auth-navigation">
+            <li class="navigation-path yellow-label">
+                <a href="./add-project.html">Добавить проект</a>
+            </li>
+            <li class="navigation-path blue-label">
+                <a href="./add-offer.html">Предложить инвестиции</a>
+            </li>
+            <li class="navigation-path">
+                <a href="./personal-cabinet.html">Личный кабинет</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Искать инвестора</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Смотреть проекты</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Цены</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Блог</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Обратная связь</a>
+            </li>
+        </ul>
+        <div class="information d-flex flex-column">
+            <a href="" class="information-block">Политика конфиденциальности</a>
+            <a href="" class="information-block">О проекте</a>
+            <a href="" class="information-block">Контакты</a>
+        </div>
+    </div>
+</div>
+<div class="body">
+    <div id="add-project">
+        <h1 id="add-project-title">Мои проекты</h1>
+        <h3 class="add-project-description">
+            Разместите ваш проект в базе, чтобы его мог найти только настоящий инвестор.<br>Это совершенно бесплатно.
+        </h3>
+        <form>
+            <div class="form-group mb-4">
+                <label for="add-project-name" class="investinder-label">Название проекта <span class="required">*</span></label>
+                <input type="text" class="form-control" id="add-project-name">
+            </div>
+            <div class="form-group mb-4 form-group-select">
+                <label for="add-project-region" class="investinder-label">Регион</label>
+                <select type="email" class="form-control" id="add-project-region">
+                    <option value="1" selected>Москва и область</option>
+                    <option value="2" >Москва и область</option>
+                    <option value="3" >Москва и область</option>
+                    <option value="4" >Москва и область</option>
+                </select>
+                <i class="select-arrow-icon"></i>
+            </div>
+            <div class="form-group mb-4 form-group-select">
+                <label for="add-project-stage" class="investinder-label">Стадия проекта <span class="required">*</span></label>
+                <select type="email" class="form-control" id="add-project-stage">
+                    <option value="1" selected>Задокументированная идея</option>
+                    <option value="2" >Задокументированная идея</option>
+                    <option value="3" >Задокументированная идея</option>
+                    <option value="4" >Задокументированная идея</option>
+                </select>
+                <i class="select-arrow-icon"></i>
+            </div>
+            <div class="form-group mb-4 form-group-with-postfix">
+                <label for="add-project-money-back-date" class="investinder-label">Срок окупаемости <span class="required">*</span></label>
+                <input type="number" class="form-control" id="add-project-money-back-date">
+                <span class="input-postfix">месяцев</span>
+            </div>
+            <div class="form-group mb-4">
+                <p class="position-relative investinder-label">Сфера проекта<span class="required">*</span></p>
+                <fieldset id="add-project-type">
+                    <div class="form-check investinder-chekbox-label" style="background: #1EC9E8;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type1" value="investor" checked>
+                        <label class="form-check-label" for="type1">IT</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #FF7A2F;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type2" value="investor" checked>
+                        <label class="form-check-label" for="type2">Строительство</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #FE9E76;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type3" value="investor" checked>
+                        <label class="form-check-label" for="type3">Торговля</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #1EC9E8;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type4" value="investor">
+                        <label class="form-check-label" for="type4">Производство</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #76FEC5;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type5" value="investor" checked>
+                        <label class="form-check-label" for="type5">Медицина</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #FFD600;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type6" value="investor" checked>
+                        <label class="form-check-label" for="type6">Спорт</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #5BFF62;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type7" value="investor" checked>
+                        <label class="form-check-label" for="type7">Туризм</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #E85668;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type8" value="investor" checked>
+                        <label class="form-check-label" for="type8">Обучение</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #1EC9E8;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type9" value="investor">
+                        <label class="form-check-label" for="type9">Сфера услуг</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group mb-4 form-check investinder-chekbox">
+                <label class="investinder-label">Наличие юр. лица
+                    <input type="checkbox" class="form-control">
+                    <span class="investinder-checkmark-checkbox"></span>
+                    <small class="form-text text-muted investinder-form-text">
+                        Имеется ли у вашей команды/стартапа/проекта <br> зарегистрированное юр.лицо или нет.
+                    </small>
+                </label>
+            </div>
+            <div class="form-group mb-4 form-group-with-postfix">
+                <label for="add-project-description" class="investinder-label">
+                    Краткое описание проекта <span class="required">*</span>
+                </label>
+                <input type="text" class="form-control" id="add-project-description" maxlength="170"
+                       onkeyup="getCharLeftCount(170)">
+                <span class="input-postfix" id="description-char-count">170</span>
+            </div>
+            <div class="form-group">
+                <label for="project-presentation" class="investinder-label">
+                    Презентация проекта
+                    <span class="investinder-form-control-file">
+                        <input type="file" class="form-control-file" id="project-presentation">
+                        <i class="add-icon"></i>
+                        Добавить файл
+                    </span>
+                    <small class="form-text text-muted investinder-form-text">
+                        Не более 10 МБ. Допускаются к загрузке файлы формата PDF/JPEG/RAR/ZIP.
+                    </small>
+                </label>
+            </div>
+            <div class="form-group mb-4">
+                <p class="position-relative investinder-label">Контакты</p>
+                <fieldset id="contacts">
+                    <div class="form-group mb-4 icon-input">
+                        <i class="prefix-icon letter-icon" style="background: #CBCBCB;"></i>
+                        <input type="text" class="form-control" id="contacts-email" aria-describedby="emailHelp">
+                        <span class="required" style="right: 0">*</span>
+                    </div>
+                    <div class="form-group mb-4 icon-input">
+                        <i class="prefix-icon phone-icon" style="background: #CBCBCB;"></i>
+                        <input type="text" class="form-control" id="contacts-phone" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group mb-4 icon-input">
+                        <i class="prefix-icon whatsapp-icon" style="background: #CBCBCB;"></i>
+                        <input type="text" class="form-control" id="contacts-whatsapp" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group mb-4 icon-input">
+                        <i class="prefix-icon telegram-icon" style="background: #CBCBCB;"></i>
+                        <input type="text" class="form-control" id="contacts-telegram" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group mb-4 icon-input">
+                        <i class="prefix-icon skype-icon" style="background: #CBCBCB;"></i>
+                        <input type="text" class="form-control" id="contacts-skype" aria-describedby="emailHelp">
+                    </div>
+                </fieldset>
+            </div>
+            <button class="mt-auto btn btn-primary investogram-ui-button-yellow investogram-ui-button-small"
+                    onclick="return false;">
+                Разместить проект
+            </button>
+        </form>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+</html>

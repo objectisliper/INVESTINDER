@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-material-design-dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap-material-design-dist/js/bootstrap-material-design.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</head>
+<body>
+<div class="head">
+    <nav class="d-flex justify-content-between align-items-center bg-black investinder-header">
+        <a class="navbar-brand" href="main-page.html">
+            <div class="investinder-logo">
+                <i class="horse-icon"></i>
+            </div>
+            <p class="brand-name">INVESTINDER</p>
+        </a>
+        <div id="investinder-toggler" onclick="togglePageList()">
+            <span class="investinder-toggle-icon" id="navigation-open"></span>
+            <span class="investinder-close-icon" id="navigation-close"></span>
+        </div>
+    </nav>
+    <div id="navigation-page-list" class="flex-column justify-content-between">
+        <ul class="navigation-blocks list-unstyled active" id="unauth-navigation">
+            <li class="navigation-path">
+                <a href="">Войти в аккаунт</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Искать инвестора</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Смотреть проекты</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Цены</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Блог</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Обратная связь</a>
+            </li>
+        </ul>
+        <ul class="navigation-blocks list-unstyled" id="auth-navigation">
+            <li class="navigation-path yellow-label">
+                <a href="./add-project.html">Добавить проект</a>
+            </li>
+            <li class="navigation-path blue-label">
+                <a href="./add-offer.html">Предложить инвестиции</a>
+            </li>
+            <li class="navigation-path">
+                <a href="./personal-cabinet.html">Личный кабинет</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Искать инвестора</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Смотреть проекты</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Цены</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Блог</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Обратная связь</a>
+            </li>
+        </ul>
+        <div class="information d-flex flex-column">
+            <a href="" class="information-block">Политика конфиденциальности</a>
+            <a href="" class="information-block">О проекте</a>
+            <a href="" class="information-block">Контакты</a>
+        </div>
+    </div>
+</div>
+<div class="body">
+    <div id="personal-cabinet-projects">
+        <div class="personal-cabinet-projects-title-block d-flex align-items-center justify-content-center title-block">
+            <div class="personal-cabinet-projects-return-button title-block-return-button"
+                 onclick="returnToPreviousPage()">
+                <i class="back-arrow"></i>
+            </div>
+            <h1 id="personal-cabinet-projects-data-title" class="block-title-text">Мои проекты</h1>
+        </div>
+        <div class="create-project-action">
+            <a href="./add-project.html">
+                <button class="mt-auto btn btn-primary investogram-ui-button-yellow investogram-ui-button-small">
+                    Добавить проект
+                </button>
+            </a>
+        </div>
+        <div class="existed-project">
+            <div class="project-info d-flex align-items-center justify-content-between">
+                <p class="project-title">
+                    <i class="eye-icon"></i> Лазурин
+                </p>
+                <p class="project-publication-date">
+                    Размещен 28.10.19
+                </p>
+                <p class="project-views-count">
+                    <i class="views-icon mr-1"></i> 256
+                </p>
+                <p class="project-lock-count">
+                    <i class="lock-unlocked-icon mr-1"></i> 36
+                </p>
+                <a href="" class="project-edit-link">Редактировать</a>
+            </div>
+            <button class="mt-auto btn btn-primary investogram-ui-button-blue investogram-ui-button-small">
+                Больше показов
+            </button>
+        </div>
+        <div class="existed-project">
+            <div class="project-info d-flex align-items-center justify-content-between">
+                <p class="project-title">
+                    <i class="eye-icon"></i> Лазурин
+                </p>
+                <p class="project-publication-date">
+                    Размещен 28.10.19
+                </p>
+                <p class="project-views-count">
+                    <i class="views-icon mr-1"></i> 256
+                </p>
+                <p class="project-lock-count">
+                    <i class="lock-unlocked-icon mr-1"></i> 36
+                </p>
+                <a href="" class="project-edit-link">Редактировать</a>
+            </div>
+            <button class="mt-auto btn btn-primary investogram-ui-button-blue investogram-ui-button-small">
+                Больше показов
+            </button>
+        </div>
+        <div class="existed-project">
+            <div class="project-info d-flex align-items-center justify-content-between">
+                <p class="project-title">
+                    <i class="eye-icon"></i> Лазурин
+                </p>
+                <p class="project-publication-date">
+                    Размещен 28.10.19
+                </p>
+                <p class="project-views-count">
+                    <i class="views-icon mr-1"></i> 256
+                </p>
+                <p class="project-lock-count">
+                    <i class="lock-unlocked-icon mr-1"></i> 36
+                </p>
+                <a href="" class="project-edit-link">Редактировать</a>
+            </div>
+            <button class="mt-auto btn btn-primary investogram-ui-button-blue investogram-ui-button-small">
+                Больше показов
+            </button>
+        </div>
+        <div class="existed-project">
+            <div class="project-info d-flex align-items-center justify-content-between">
+                <p class="project-title">
+                    <i class="eye-icon"></i> Лазурин
+                </p>
+                <p class="project-publication-date">
+                    Размещен 28.10.19
+                </p>
+                <p class="project-views-count">
+                    <i class="views-icon mr-1"></i> 256
+                </p>
+                <p class="project-lock-count">
+                    <i class="lock-unlocked-icon mr-1"></i> 36
+                </p>
+                <a href="" class="project-edit-link">Редактировать</a>
+            </div>
+            <button class="mt-auto btn btn-primary investogram-ui-button-blue investogram-ui-button-small">
+                Больше показов
+            </button>
+        </div>
+        <div class="existed-project">
+            <div class="project-info d-flex align-items-center justify-content-between">
+                <p class="project-title">
+                    <i class="eye-icon"></i> Лазурин
+                </p>
+                <p class="project-publication-date">
+                    Размещен 28.10.19
+                </p>
+                <p class="project-views-count">
+                    <i class="views-icon mr-1"></i> 256
+                </p>
+                <p class="project-lock-count">
+                    <i class="lock-unlocked-icon mr-1"></i> 36
+                </p>
+                <a href="" class="project-edit-link">Редактировать</a>
+            </div>
+            <button class="mt-auto btn btn-primary investogram-ui-button-blue investogram-ui-button-small">
+                Больше показов
+            </button>
+        </div>
+        <div class="existed-project">
+            <div class="project-info d-flex align-items-center justify-content-between">
+                <p class="project-title">
+                    <i class="eye-icon"></i> Лазурин
+                </p>
+                <p class="project-publication-date">
+                    Размещен 28.10.19
+                </p>
+                <p class="project-views-count">
+                    <i class="views-icon mr-1"></i> 256
+                </p>
+                <p class="project-lock-count">
+                    <i class="lock-unlocked-icon mr-1"></i> 36
+                </p>
+                <a href="" class="project-edit-link">Редактировать</a>
+            </div>
+            <button class="mt-auto btn btn-primary investogram-ui-button-blue investogram-ui-button-small">
+                Больше показов
+            </button>
+        </div>
+        <div class="existed-project">
+            <div class="project-info d-flex align-items-center justify-content-between">
+                <p class="project-title">
+                    <i class="eye-icon"></i> Лазурин
+                </p>
+                <p class="project-publication-date">
+                    Размещен 28.10.19
+                </p>
+                <p class="project-views-count">
+                    <i class="views-icon mr-1"></i> 256
+                </p>
+                <p class="project-lock-count">
+                    <i class="lock-unlocked-icon mr-1"></i> 36
+                </p>
+                <a href="" class="project-edit-link">Редактировать</a>
+            </div>
+            <button class="mt-auto btn btn-primary investogram-ui-button-blue investogram-ui-button-small">
+                Больше показов
+            </button>
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+</html>

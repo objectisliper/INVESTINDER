@@ -56,13 +56,13 @@
             </ul>
             <ul class="navigation-blocks list-unstyled" id="auth-navigation">
                 <li class="navigation-path yellow-label">
-                    <a href="">Добавить проект</a>
+                    <a href="./add-project.html">Добавить проект</a>
                 </li>
                 <li class="navigation-path blue-label">
-                    <a href="">Предложить инвестиции</a>
+                    <a href="./add-offer.html">Предложить инвестиции</a>
                 </li>
                 <li class="navigation-path">
-                    <a href="">Личный кабинет</a>
+                    <a href="./personal-cabinet.html">Личный кабинет</a>
                 </li>
                 <li class="navigation-path">
                     <a href="">Искать инвестора</a>
@@ -101,7 +101,7 @@
                     которым действительно будет интересен твой проект.
                 </p>
                 <button class="btn btn-primary investogram-ui-button-blue">Найти инвестора</button>
-                <a href="" class="block-sublink">Предложить инвестиции</a>
+                <a href="./add-offer.html" class="block-sublink">Предложить инвестиции</a>
             </div>
         </div>
         <div class="find-project">
@@ -113,6 +113,33 @@
                 </p>
                 <button class="btn btn-warning investogram-ui-button-yellow">Найти проекты</button>
                 <a href="" class="block-sublink">Размести свой проект</a>
+            </div>
+        </div>
+        <div class="cookie-snackbar" id="cookieSnackbar">
+            <p>
+                Мы не храним Ваши данные в открытом доступе, но используем технологию cookie, чтобы сделать
+                пользование сайта для вас комфортным.
+                <i class="check-icon" onclick="hideCookieSnackbar()"></i>
+            </p>
+        </div>
+        <div id="news-snackbar">
+            <div class="news-snackbar-content">
+                <h3 class="news-snackbar-header">
+                    Заголовок записи в блоге 16 кеглем, жирный шрифт
+                </h3>
+                <p class="news-snackbar-preview">
+                    Короткий подзаголовок записи блога из описания, 14 кеглем, обычный шрифт.
+                </p>
+                <i class="investinder-close-icon"
+                   id="news-snackbar-close-icon"
+                   onclick="hideNewsSnackbar()">
+
+                </i>
+                <button type="button"
+                        class="btn btn-outline-primary investinder-outline-button"
+                        id="news-snackbar-detail-button">
+                    Подробнее
+                </button>
             </div>
         </div>
     </div>

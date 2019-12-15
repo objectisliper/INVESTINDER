@@ -5,6 +5,7 @@ body {
 
 .body {
     height: calc(100vh - 56px);
+    position: relative;
 }
 
 .bg-black {
@@ -26,6 +27,163 @@ body {
     color: white;
     font-weight: bold;
     margin-left: 4px;
+}
+
+.next-page-icon {
+    display: block;
+    width: 9.4px;
+    height: 16px;
+    mask: url(../icons/arrow.svg);
+    -webkit-mask: url(../icons/arrow.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 9.4px 16px;
+    background: #FFC11E;
+}
+
+.phone-icon {
+    display: block;
+    width: 28.79px;
+    height: 26.8px;
+    mask: url(../icons/phone.svg);
+    -webkit-mask: url(../icons/phone.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 28.79px 26.8px;
+    background: #545454;
+}
+
+.whatsapp-icon {
+    display: block;
+    width: 29px;
+    height: 26px;
+    mask: url(../icons/whatsapp.svg);
+    -webkit-mask: url(../icons/whatsapp.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 29px 26px;
+    background: #545454;
+}
+
+.telegram-icon {
+    display: block;
+    width: 30px;
+    height: 24.38px;
+    mask: url(../icons/telegram.svg);
+    -webkit-mask: url(../icons/telegram.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 30px 24.38px;
+    background: #545454;
+}
+
+.skype-icon {
+    display: block;
+    width: 27.99px;
+    height: 26.07px;
+    mask: url(../icons/skype.svg);
+    -webkit-mask: url(../icons/skype.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 27.99px 26.07px;
+    background: #545454;
+}
+
+.eye-icon {
+    display: block;
+    width: 12px;
+    height: 7.84px;
+    mask: url(../icons/eye.svg);
+    -webkit-mask: url(../icons/eye.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 12px 7.84px;
+    background: #545454;
+}
+
+.views-icon {
+    display: block;
+    width: 13px;
+    height: 12px;
+    mask: url(../icons/views.svg);
+    -webkit-mask: url(../icons/views.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 13px 12px;
+    background: #CBCBCB;
+}
+
+.lock-unlocked-icon {
+    display: block;
+    width: 9.75px;
+    height: 12px;
+    mask: url(../icons/unlocked-lock.svg);
+    -webkit-mask: url(../icons/unlocked-lock.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 9.75px 12px;
+    background: #CBCBCB;
+}
+
+.back-arrow {
+    display: block;
+    width: 9.4px;
+    height: 16px;
+    mask: url(../icons/arrow.svg);
+    -webkit-mask: url(../icons/arrow.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 9.4px 16px;
+    background: #545454;
+    transform: rotate(-180deg);
+}
+
+.check-icon {
+    display: block;
+    width: 20px;
+    height: 14.55px;
+    mask: url(../icons/check.svg);
+    -webkit-mask: url(../icons/check.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 20px 14.55px;
+    background-color: white;
+}
+
+.letter-icon {
+    display: block;
+    width: 28.22px;
+    height: 20.16px;
+    mask: url(../icons/letter.svg);
+    -webkit-mask: url(../icons/letter.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 28.22px 20.16px;
+    background-color: white;
+}
+
+.select-arrow-icon {
+    display: block;
+    width: 11px;
+    height: 9px;
+    mask: url(../icons/select-arrow.svg);
+    -webkit-mask: url(../icons/select-arrow.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 11px 9px;
+    background: #545454;
+}
+
+.add-icon {
+    display: block;
+    width: 13px;
+    height: 13px;
+    mask: url(../icons/add.svg);
+    -webkit-mask: url(../icons/add.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 13px 13px;
+    background: #545454;
 }
 
 .horse-icon {
@@ -266,7 +424,7 @@ body {
     line-height: 19px;
 }
 
-.investinder-radio {
+.investinder-radio, .investinder-chekbox-label, .investinder-chekbox {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -274,7 +432,9 @@ body {
     cursor: pointer;
 }
 
-.investinder-radio input[type='radio'] {
+.investinder-radio input[type='radio'],
+.investinder-chekbox-label input[type='checkbox'],
+.investinder-chekbox input[type='checkbox'] {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -291,18 +451,36 @@ body {
     border: 2px solid #CBCBCB;
 }
 
+.investinder-checkmark-checkbox {
+    position: absolute;
+    top: 1px;
+    left: -16px;
+    width: 13px;
+    height: 13px;
+    background: white;
+    border-radius: 4px;
+    border: 2px solid #CBCBCB;
+}
+
 .investinder-radio:hover input[type='radio'] ~ .investinder-checkmark-radio {
     background-color: rgba(0,0,0,0.1);
 }
 
-.investinder-checkmark-radio:after {
+.investinder-checkmark-radio:after,
+.investinder-chekbox-label:after,
+.investinder-checkmark-checkbox:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-.investinder-radio input:checked ~ .investinder-checkmark-radio:after {
+.investinder-radio input:checked ~ .investinder-checkmark-radio:after,
+.investinder-chekbox input:checked ~ .investinder-checkmark-checkbox:after {
     display: block;
+}
+
+.investinder-chekbox input:checked ~ .investinder-checkmark-checkbox {
+    background-color: #5199FF;
 }
 
 .investinder-radio .investinder-checkmark-radio:after {
@@ -312,6 +490,267 @@ body {
     left: 2px;
     background: #5199FF;
     border-radius: 64px;
+}
+
+.investinder-chekbox .investinder-checkmark-checkbox:after {
+    left: 3px;
+    top: 0;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 1px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.investinder-form-control-file input[type='file'] {
+    display: none;
+}
+
+.investinder-form-control-file {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #545454;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    padding: 9px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 11px;
+    margin: 13px 0;
+    color: #545454;
+
+    transition: background-color 0.3s;
+}
+
+.investinder-form-control-file:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.investinder-form-control-file i {
+    margin-right: 5px;
+}
+
+.investinder-chekbox-label {
+    width: fit-content;
+    height: fit-content;
+    padding-left: 0;
+}
+
+.investinder-chekbox-label input[type=checkbox]{
+    left: 20px;
+}
+
+.investinder-chekbox-label label {
+    padding: 5px;
+    background-color: #CBCBCB;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.investinder-chekbox-label input[type='checkbox']:checked ~ label {
+    background: transparent
+}
+
+fieldset .investinder-chekbox-label {
+    margin-bottom: 12px;
+    display: inline-flex;
+    margin-right: 12px;
+    border-radius: 2px;
+}
+
+.investinder-label {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+
+    color: #AFAFAF;
+}
+
+.investinder-form-text {
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #CBCBCB !important;
+}
+
+.cookie-snackbar {
+    padding: 30px 20px;
+    background: #FF7A2F;
+    box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 0;
+}
+
+.cookie-snackbar p {
+    margin-bottom: 0;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    color: #FFFFFF;
+}
+
+.cookie-snackbar .check-icon {
+    position: absolute;
+    right: -12px;
+    bottom: 0;
+}
+
+#news-snackbar {
+    top: 0;
+    position: absolute;
+    padding: 15px 20px;
+    background: linear-gradient(360deg, #EFC76C 0%, #B58438 100%);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.investinder-outline-button {
+    border: 2px solid #FFFFFF !important;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: white !important;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.news-snackbar-content {
+    position: relative;
+}
+
+.news-snackbar-header {
+    width: 77.2%;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.news-snackbar-preview {
+    width: 58.6%;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 0;
+
+    color: #FFFFFF;
+}
+
+#news-snackbar-close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+}
+
+#news-snackbar-detail-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.title-block {
+    position: relative;
+    margin-bottom: 24px;
+    margin-top: 17px;
+}
+
+.block-title-text {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #545454;
+}
+
+.title-block-return-button {
+    position: absolute;
+    left: 0;
+}
+
+.form-group-with-postfix {
+    position: relative;
+}
+
+.form-group-with-postfix .input-postfix {
+    position: absolute;
+    right: 4px;
+    bottom: 9px;
+}
+
+.form-group-with-postfix input {
+    padding-right: 25%;
+}
+
+.form-group-select {
+    position: relative;
+}
+
+.form-group-select .select-arrow-icon {
+    position: absolute;
+    bottom: 12px;
+    right: 4px;
+    transition: all 0.3s;
+}
+
+span.required {
+    color: red;
+    position: absolute;
+    margin-left: 5px;
+    top: 0;
+}
+
+.icon-input {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-input input {
+    width: 85%;
 }
 
 /**************/
@@ -432,5 +871,330 @@ body {
     color: #232BF5;
 }
 
+/********************/
+/* PERSONAL CABINET */
+/********************/
+
+#personal-cabinet {
+    padding: 35px 20px;
+    height: 100%;
+}
+
+#personal-cabinet-title {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #545454;
+
+}
+
+.personal-cabinet-email, .personal-cabinet-account-type {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 23px;
+
+    color: #CBCBCB;
+}
+
+.personal-cabinet-navigation-path {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #CBCBCB;
+    margin-top: 12px;
+    padding-bottom: 14px;
+}
+
+.personal-cabinet-navigation-path p {
+    margin-bottom: 0;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #545454;
+}
+
+.logout-link {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    text-decoration-line: underline;
+
+    color: #FF5050;
+}
 
 
+/*************************/
+/* PERSONAL CABINET DATA */
+/*************************/
+
+#personal-cabinet-data-form {
+    padding: 20px;
+}
+
+#personal-cabinet-data-form label {
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 0;
+    color: #CBCBCB;
+}
+
+#personal-cabinet-data-form input {
+    padding-top: 0;
+    padding-left: 8px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
+
+    color: #545454;
+}
+
+#personal-cabinet-data-form .investogram-ui-button-small {
+    width: 100%;
+    margin: 0 10px;
+}
+
+
+/*****************************/
+/* PERSONAL CABINET PROJECTS */
+/*****************************/
+
+.personal-cabinet-projects-return-button {
+    left: 13px;
+}
+
+#personal-cabinet-projects {
+    padding: 20px;
+    height: 100%;
+    overflow: scroll;
+}
+
+#personal-cabinet-projects .investogram-ui-button-yellow,
+#personal-cabinet-projects .investogram-ui-button-blue{
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.create-project-action {
+    padding-bottom: 30px;
+    border-bottom: 0.5px solid #CBCBCB;
+}
+
+#personal-cabinet-projects .existed-project {
+    margin-top: 20px;
+    padding-bottom: 18px;
+    border-bottom: 0.5px solid #CBCBCB;
+}
+
+.project-info {
+    margin-bottom: 20px;
+}
+
+.project-info p{
+    font-family: Roboto, sans-serif;
+}
+
+.project-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+
+    color: #545454;
+}
+
+.project-title i {
+    margin-right: 10px;
+}
+
+.project-publication-date, .project-views-count, .project-lock-count, .project-edit-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    /* identical to box height */
+
+
+    color: #CBCBCB;
+}
+
+.project-edit-link {
+    text-decoration-line: underline;
+}
+
+/*****************************/
+/* PERSONAL CABINET CONTACTS */
+/*****************************/
+
+.personal-cabinet-contacts-return-button {
+    left: 13px;
+}
+
+#personal-cabinet-contacts {
+    padding: 20px;
+    height: 100%;
+    overflow: scroll;
+}
+
+.contact-list {
+    width: 100%;
+}
+
+.contact-block {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #CBCBCB;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-list p {
+    margin-bottom: 0;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.contact-title {
+    text-decoration-line: underline;
+
+    color: #545454;
+}
+
+.contact-date {
+    color: #CBCBCB;
+}
+
+/***************/
+/* ADD PROJECT */
+/***************/
+
+
+#add-project {
+    padding: 25px 20px;
+    height: 100%;
+    overflow: scroll;
+}
+
+#add-project-title {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #545454;
+    margin-bottom: 20px;
+}
+
+.add-project-description {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #545454;
+}
+
+#add-project form .form-group.mb-4 label {
+    position: relative;
+}
+
+#description-char-count {
+    font-style: italic;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+
+
+    color: #CBCBCB;
+}
+
+#add-project-description {
+    padding-right: 10%;
+}
+
+
+#add-project .investogram-ui-button-yellow {
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF !important;
+}
+
+
+/*************/
+/* ADD OFFER */
+/*************/
+
+#add-offer {
+    padding: 25px 20px;
+    height: 100%;
+    overflow: scroll;
+}
+
+#add-offer-title {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #545454;
+    margin-bottom: 20px;
+}
+
+.add-offer-description {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #545454;
+}

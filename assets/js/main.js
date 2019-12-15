@@ -1,6 +1,42 @@
+// maxLength:number
+// return:void
+function getCharLeftCount(maxLength) {
+    const description = $('#add-project-description')[0];
+    const charCounter = $('#description-char-count')[0];
+    console.error(description.value);
+    console.error(charCounter);
+    console.error(maxLength - description.value.length);
+    charCounter.innerText = maxLength - description.value.length;
+}
+
+// return:void
+function hideNewsSnackbar() {
+    const newsSnackbar = $('#news-snackbar');
+    newsSnackbar.hide();
+}
+
+// return:void
+function hideCookieSnackbar() {
+    const cookieSnackbar = $('#cookieSnackbar');
+    cookieSnackbar.hide();
+}
+
 // return:bool
 function isAuth() {
     return !!window.localStorage.getItem('isAuth');
+}
+
+// TODO Just for preview, change on server side rendering
+// return:void
+function returnToPreviousPage() {
+    window.history.back();
+}
+
+// TODO Just for preview, change on server side rendering
+// return:void
+function logout() {
+    window.localStorage.removeItem('isAuth')
+    window.location.href = 'main-page.html'
 }
 
 // TODO Just for preview, change on server side rendering

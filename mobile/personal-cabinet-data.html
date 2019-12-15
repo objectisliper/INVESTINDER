@@ -88,47 +88,51 @@
     </div>
 </div>
 <div class="body">
-    <div id="registration-form">
-        <h1 id="registration-form-title" class="mb-5">Регистрация</h1>
+    <div id="personal-cabinet-data-form">
+        <div class="personal-cabinet-data-title-block d-flex align-items-center justify-content-center title-block">
+            <div class="personal-cabinet-data-return-button title-block-return-button"
+                 onclick="returnToPreviousPage()">
+                <i class="back-arrow"></i>
+            </div>
+            <h1 id="personal-cabinet-data-title" class="block-title-text">Персональные данные</h1>
+        </div>
         <form>
-            <fieldset class="form-group">
-                <div class="d-flex justify-content-between">
-                    <div class="form-check investinder-radio">
-                        <label class="form-check-label" for="investor">Я инвестор
-                            <input class="form-check-input" type="radio" name="gridRadios" id="investor" value="investor" checked>
-                            <span class="investinder-checkmark-radio"></span>
-                        </label>
-                    </div>
-                    <div class="form-check investinder-radio">
-                        <label class="form-check-label" for="founder">Я основатель
-                            <input class="form-check-input" type="radio" name="gridRadios" id="founder" value="founder">
-                            <span class="investinder-checkmark-radio"></span>
-                        </label>
-                    </div>
-                </div>
-            </fieldset>
             <div class="form-group mb-4">
-                <input type="email" class="form-control" id="registration-email" aria-describedby="emailHelp" placeholder="Email">
+                <label for="data-login">Логин</label>
+                <input type="text" class="form-control" id="data-login" aria-describedby="emailHelp">
             </div>
             <div class="form-group mb-4">
-                <input type="password" class="form-control" id="registration-password" placeholder="Пароль">
+                <label for="data-email">Email</label>
+                <input type="email" class="form-control" id="data-email" aria-describedby="emailHelp">
             </div>
             <div class="form-group mb-4">
-                <input type="password" class="form-control" id="registration-password-repeat" placeholder="Пароль еще раз">
+                <label for="data-password">Новый пароль</label>
+                <input type="text" class="form-control" id="data-password" aria-describedby="emailHelp">
             </div>
-            <p class="privacy-policy-tip mt-1 mb-4">
-                Нажимая кнопку "Регистрация" вы подтверждаете свое согласие с
-                <a href="">Политикой конфиденциальности</a> и <a href="">Правилами сайта</a>ю
-            </p>
-            <p class="registration-description mt-1 mb-1">
-                Мы не храним проекты в открытом доступе. Как и любыеконтакты. Только зарегистрированные инвесторы
-                смогут смотреть проекты, в то время как только зарегистрированные основатели смогу их размещать.
-            </p>
-            <button class="mt-4 mb-4 btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
-                    onclick="login(); return false;">
-                Войти
+            <div class="form-group mb-4">
+                <label for="data-repeat-password">Новый пароль еще раз</label>
+                <input type="text" class="form-control" id="data-repeat-password" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group mb-4 icon-input">
+                <i class="prefix-icon phone-icon"></i>
+                <input type="text" class="form-control" id="data-phone" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group mb-4 icon-input">
+                <i class="prefix-icon whatsapp-icon"></i>
+                <input type="text" class="form-control" id="data-whatsapp" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group mb-4 icon-input">
+                <i class="prefix-icon telegram-icon"></i>
+                <input type="text" class="form-control" id="data-telegram" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group mb-4 icon-input">
+                <i class="prefix-icon skype-icon"></i>
+                <input type="text" class="form-control" id="data-skype" aria-describedby="emailHelp">
+            </div>
+            <button class="mt-auto btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
+                    onclick="return false;">
+                Сохранить
             </button>
-            <a href="" id="account-entry" class="d-block">Войти в аккаунт</a>
         </form>
     </div>
 </div>
