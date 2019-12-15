@@ -39,7 +39,7 @@
                 <a href="">Войти в аккаунт</a>
             </li>
             <li class="navigation-path">
-                <a href="">Искать инвестора</a>
+                <a href="./find-investor.html">Искать инвестора</a>
             </li>
             <li class="navigation-path">
                 <a href="">Смотреть проекты</a>
@@ -65,7 +65,7 @@
                 <a href="./personal-cabinet.html">Личный кабинет</a>
             </li>
             <li class="navigation-path">
-                <a href="">Искать инвестора</a>
+                <a href="./find-investor.html">Искать инвестора</a>
             </li>
             <li class="navigation-path">
                 <a href="">Смотреть проекты</a>
@@ -94,10 +94,260 @@
             Оставьте ваше предложение об инвестициях совершенно бесплатно. Лучшие проекты сами вас найдут.
         </h3>
         <form>
-            <button class="mt-auto btn btn-primary investogram-ui-button-yellow investogram-ui-button-small"
+            <div class="form-group mb-4">
+                <label for="add-offer-name" class="investinder-label">
+                    Вас зовут <span class="required">*</span>
+                </label>
+                <input type="text" class="form-control" id="add-offer-name">
+                <small class="form-text text-muted investinder-form-text">
+                    Ваше имя не хранится в общедоступном виде и будет отображено только при получении доступа
+                    к контактным данным
+                </small>
+            </div>
+            <div class="form-group mb-4 form-group-with-postfix">
+                <label for="add-offer-price" class="investinder-label">
+                    Вы готовы инвестировать <span class="required">*</span>
+                </label>
+                <input type="number" class="form-control" id="add-offer-price">
+                <span class="input-postfix">Рублей</span>
+                <small class="form-text text-muted investinder-form-text">
+                    Рекомендуется вводить среднее или точное значение суммы инвестиций. Вводится только полная сумма - без
+                    сокращений. Сумма вводится в рублях и не конвертируется в другую валюту.
+                </small>
+            </div>
+            <div class="form-group mb-4">
+                <p class="position-relative investinder-label">
+                    Вы выступаете как<span class="required">*</span>
+                </p>
+                <fieldset>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Бизнес-ангел
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Частный инвестор
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Венчурный фонд
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Инвестиционный фонд
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Юридическое лицо
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group mb-4">
+                <p class="position-relative investinder-label">
+                    Вы предлагаете<span class="required">*</span>
+                </p>
+                <fieldset>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Беспроцентный заём
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Займ под проценты
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Кредит
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Долевое участие
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Нематериальные ресурсы
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Ангельские инвестиции
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group mb-4">
+                <p class="position-relative investinder-label">Вас интересуют проекты в сферах<span class="required">*</span></p>
+                <fieldset id="add-offer-type">
+                    <div class="form-check investinder-chekbox-label" style="background: #1EC9E8;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type1" value="investor" checked>
+                        <label class="form-check-label" for="type1">IT</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #FF7A2F;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type2" value="investor" checked>
+                        <label class="form-check-label" for="type2">Строительство</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #FE9E76;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type3" value="investor" checked>
+                        <label class="form-check-label" for="type3">Торговля</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #1EC9E8;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type4" value="investor">
+                        <label class="form-check-label" for="type4">Производство</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #76FEC5;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type5" value="investor" checked>
+                        <label class="form-check-label" for="type5">Медицина</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #FFD600;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type6" value="investor" checked>
+                        <label class="form-check-label" for="type6">Спорт</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #5BFF62;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type7" value="investor" checked>
+                        <label class="form-check-label" for="type7">Туризм</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #E85668;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type8" value="investor" checked>
+                        <label class="form-check-label" for="type8">Обучение</label>
+                    </div>
+                    <div class="form-check investinder-chekbox-label" style="background: #1EC9E8;">
+                        <input class="form-check-input" type="checkbox" name="gridRadios" id="type9" value="investor">
+                        <label class="form-check-label" for="type9">Сфера услуг</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group mb-4">
+                <p class="position-relative investinder-label">
+                    Готовы рассматривать проекты на стадии<span class="required">*</span>
+                </p>
+                <fieldset>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Любая
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Задокументированная идея
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Бизнес-модель
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Есть MVP
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Есть подтвержденный спрос
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Первые продажи
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Действующий бизнес
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Стагнирующий бизнес
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Pivot
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group mb-4 form-group-with-postfix">
+                <label for="add-project-description" class="investinder-label">
+                    Комментарии к предложению
+                </label>
+                <input type="text" class="form-control" id="add-project-description" maxlength="170"
+                       onkeyup="getCharLeftCount(170)">
+                <span class="input-postfix" id="description-char-count">170</span>
+                <small class="form-text text-muted investinder-form-text">
+                    Необязательное поле. Комментарий будет добавлен к визитке вашего инвестиционного предложения.
+                    Допускается не более 170 символов.
+                </small>
+            </div>
+            <div class="form-group mb-4">
+                <label for="add-offer-email" class="investinder-label">
+                    Ваш контактные Email <span class="required">*</span>
+                </label>
+                <input type="email" class="form-control" id="add-offer-email">
+                <small class="form-text text-muted investinder-form-text">
+                    На этот адрес будут приходить предложения от основателей проектов. Ваш email не хранится в
+                    общедоступном виде и будет отображен только при получении доступа к Вашим контактным данным.
+                </small>
+            </div>
+            <div class="form-group mb-4">
+                <label for="add-offer-phone" class="investinder-label">
+                    Ваш контактный телефон <span class="required">*</span>
+                </label>
+                <input type="number" class="form-control" id="add-offer-phone">
+                <small class="form-text text-muted investinder-form-text">
+                    Необязательное поле. Ваше контактный номер не хранится в общедоступном виде и будет отображен
+                    только при получении доступа к контактным данным.
+                </small>
+            </div>
+            <button class="mt-auto btn btn-primary investogram-ui-button-blue investogram-ui-button-small mb-3"
                     onclick="return false;">
-                Разместить проект
+                Добавить предложение
             </button>
+            <button class="mt-auto btn btn-primary investogram-ui-button-green investogram-ui-button-small mb-4"
+                    onclick="return false;">
+                Разместить в открытую за 290 руб.
+            </button>
+            <p class="add-offer-button-description mb-4">
+                Размещение "в открытую" подразумевает, что ваши контакты будут доступны всем сразу.
+            </p>
+            <button class="mb-4 mt-auto btn btn-primary investogram-ui-button-orange investinder-ui-button-with-icon investogram-ui-button-small mb-4"
+                    onclick="return false;">
+                <i class="vip-icon"></i>
+                Добавить как VIP за 490 руб.
+            </button>
+            <p class="add-offer-button-description">
+                VIP предложения инвестиций всегда отображаются вверху рельтатов поиска.
+            </p>
         </form>
     </div>
 </div>

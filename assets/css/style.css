@@ -150,6 +150,30 @@ body {
     background-color: white;
 }
 
+.filter-icon {
+    display: block;
+    width: 19px;
+    height: 18.9px;
+    mask: url(../icons/filter.svg);
+    -webkit-mask: url(../icons/filter.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 19px 19px;
+    background: #545454;
+}
+
+.vip-icon {
+    display: block;
+    width: 20px;
+    height: 19.08px;
+    mask: url(../icons/vip.svg);
+    -webkit-mask: url(../icons/vip.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 20px 19.08px;
+    background: #FFC11E;
+}
+
 .letter-icon {
     display: block;
     width: 28.22px;
@@ -378,7 +402,8 @@ body {
     padding: 45px 27px 20px 27px;
 }
 
-.investogram-ui-button-blue, .investogram-ui-button-yellow {
+.investogram-ui-button-blue, .investogram-ui-button-yellow,
+.investogram-ui-button-green, .investogram-ui-button-orange {
     border-width: 0;
     display: block;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -394,8 +419,22 @@ body {
     margin: 0 auto;
 }
 
+.investogram-ui-button-orange {
+    background: #FF7A2F !important;
+}
+
+.investinder-ui-button-with-icon i {
+    left: 15px;
+    top: 8px;
+    position: absolute;
+}
+
 .investogram-ui-button-blue {
     background: #5199FF !important;
+}
+
+.investogram-ui-button-green {
+    background: #00DC7D !important;
 }
 
 .investogram-ui-button-yellow {
@@ -717,7 +756,7 @@ fieldset .investinder-chekbox-label {
 .form-group-with-postfix .input-postfix {
     position: absolute;
     right: 4px;
-    bottom: 9px;
+    margin-top: -29px;
 }
 
 .form-group-with-postfix input {
@@ -1197,4 +1236,87 @@ span.required {
     text-align: center;
 
     color: #545454;
+}
+
+#add-offer form .form-group.mb-4 label {
+    position: relative;
+}
+
+#add-offer .investinder-chekbox label {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 5px;
+
+    color: #545454;
+}
+
+#add-offer form button {
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.add-offer-button-description {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #AFAFAF;
+}
+
+/*****************/
+/* FIND INVESTOR */
+/*****************/
+
+#find-investor {
+    height: 100%;
+}
+
+.find-investor-header {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.find-investor-count, .find-investor-filter-text {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 0;
+
+    color: #545454;
+
+}
+
+
+.find-investor-filter-text {
+    margin-right: 10px;
+}
+
+.investinder-info-card-layout {
+    width: 100%;
+    height: calc(100% - 59px);
+    display: flex;
+    flex-flow: column;
+}
+
+.investinder-info-card {
+    background: #FAFAFA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 20px 15px;
+    height: 100%;
 }
