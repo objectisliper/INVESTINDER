@@ -279,7 +279,7 @@ body {
 
 #navigation-page-list a {
     color: #545454;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -324,7 +324,7 @@ body {
 
 #navigation-page-list .navigation-path.blue-label a,
 #navigation-page-list .navigation-path.yellow-label a {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -351,7 +351,7 @@ body {
 
 .find-investor .block-headliner,
 .find-project .block-headliner {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -365,7 +365,7 @@ body {
 }
 
 .find-investor .block-description {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -376,7 +376,7 @@ body {
 
 .find-project .block-subdescription,
 .find-investor .block-subdescription {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -410,7 +410,7 @@ body {
     width: 220px;
     height: 40px;
     border-radius: 4px;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -443,7 +443,7 @@ body {
 
 .find-investor .block-sublink,
 .find-project .block-sublink {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -556,7 +556,7 @@ body {
     border-radius: 4px;
     width: 100%;
     padding: 9px;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -589,7 +589,7 @@ body {
 .investinder-chekbox-label label {
     padding: 5px;
     background-color: #CBCBCB;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -611,7 +611,7 @@ fieldset .investinder-chekbox-label {
 }
 
 .investinder-label {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -622,7 +622,7 @@ fieldset .investinder-chekbox-label {
 }
 
 .investinder-form-text {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: normal;
     font-size: 12px;
@@ -641,7 +641,7 @@ fieldset .investinder-chekbox-label {
 
 .cookie-snackbar p {
     margin-bottom: 0;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -672,7 +672,7 @@ fieldset .investinder-chekbox-label {
     box-sizing: border-box;
     border-radius: 4px;
     color: white !important;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -688,7 +688,7 @@ fieldset .investinder-chekbox-label {
 
 .news-snackbar-header {
     width: 77.2%;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -699,7 +699,7 @@ fieldset .investinder-chekbox-label {
 
 .news-snackbar-preview {
     width: 58.6%;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -730,7 +730,7 @@ fieldset .investinder-chekbox-label {
 }
 
 .block-title-text {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -801,7 +801,7 @@ span.required {
 }
 
 #login-form-title {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -815,7 +815,7 @@ span.required {
 }
 
 #login-form #forgot-password {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -829,7 +829,7 @@ span.required {
 }
 
 #login-form #registration {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -852,7 +852,7 @@ span.required {
 }
 
 #registration-form-title {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -870,7 +870,7 @@ span.required {
 }
 
 #registration-form .privacy-policy-tip {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -886,7 +886,7 @@ span.required {
 }
 
 #registration-form .registration-description {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -897,7 +897,7 @@ span.required {
 }
 
 #registration-form #account-entry {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -920,7 +920,7 @@ span.required {
 }
 
 #personal-cabinet-title {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -935,7 +935,7 @@ span.required {
 }
 
 .personal-cabinet-email, .personal-cabinet-account-type {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -957,7 +957,7 @@ span.required {
 
 .personal-cabinet-navigation-path p {
     margin-bottom: 0;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -967,7 +967,7 @@ span.required {
 }
 
 .logout-link {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -988,7 +988,7 @@ span.required {
 }
 
 #personal-cabinet-data-form label {
-    font-family: Roboto,sans-serif;
+    font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 10px;
@@ -1000,7 +1000,7 @@ span.required {
 #personal-cabinet-data-form input {
     padding-top: 0;
     padding-left: 8px;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1012,7 +1012,7 @@ span.required {
 }
 
 #personal-cabinet-data-form .investogram-ui-button-small {
-    width: 100%;
+    width: -webkit-fill-available;
     margin: 0 10px;
 }
 
@@ -1054,7 +1054,7 @@ span.required {
 }
 
 .project-info p{
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .project-title {
@@ -1121,7 +1121,7 @@ span.required {
 
 .contact-list p {
     margin-bottom: 0;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -1150,7 +1150,7 @@ span.required {
 }
 
 #add-project-title {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -1162,7 +1162,7 @@ span.required {
 }
 
 .add-project-description {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1193,7 +1193,7 @@ span.required {
 
 #add-project .investogram-ui-button-yellow {
     width: 100%;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1216,7 +1216,7 @@ span.required {
 }
 
 #add-offer-title {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -1228,7 +1228,7 @@ span.required {
 }
 
 .add-offer-description {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1243,7 +1243,7 @@ span.required {
 }
 
 #add-offer .investinder-chekbox label {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1255,7 +1255,7 @@ span.required {
 
 #add-offer form button {
     width: 100%;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1265,7 +1265,7 @@ span.required {
 }
 
 .add-offer-button-description {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1290,7 +1290,7 @@ span.required {
 }
 
 .find-investor-count, .find-investor-filter-text {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
