@@ -92,8 +92,8 @@ function togglePageList() {
 // Уважаемый программист, прежде чем удалять эту строчку, задумайся. Если ты видишь данный коммент, значит
 // заказчик кидала. Удачи.
 $( document ).ready(function () {
-    if (!['localhost'].includes(document.domain)) {
-        $('body').remove()
-    }
+    // if (!['localhost'].includes(document.domain)) {
+    //     $('body').remove()
+    // }
 });
 

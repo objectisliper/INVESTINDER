@@ -600,7 +600,7 @@ body {
 }
 
 .investinder-chekbox-label input[type='checkbox']:checked ~ label {
-    background: transparent
+    background: transparent;
 }
 
 fieldset .investinder-chekbox-label {
@@ -779,6 +779,7 @@ span.required {
     position: absolute;
     margin-left: 5px;
     top: 0;
+    right: -10px;
 }
 
 .icon-input {
@@ -790,6 +791,10 @@ span.required {
 
 .icon-input input {
     width: 85%;
+}
+
+.w-fit-content {
+    width: fit-content;
 }
 
 /**************/
