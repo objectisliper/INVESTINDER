@@ -3,6 +3,14 @@ body {
     overflow: scroll;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
 .body {
     height: calc(100vh - 56px);
     position: relative;
@@ -136,6 +144,31 @@ body {
     background-size: 9.4px 16px;
     background: #545454;
     transform: rotate(-180deg);
+}
+
+.prev-page-icon {
+    display: block;
+    width: 21.15px;
+    height: 36px;
+    mask: url(../icons/arrow.svg);
+    -webkit-mask: url(../icons/arrow.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 21.5px 36px;
+    background: #FFC11E;
+    transform: rotate(-180deg);
+}
+
+.next-page-icon {
+    display: block;
+    width: 21.15px;
+    height: 36px;
+    mask: url(../icons/arrow.svg);
+    -webkit-mask: url(../icons/arrow.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 21.5px 36px;
+    background: #FFC11E;
 }
 
 .check-icon {
@@ -417,6 +450,7 @@ body {
     line-height: 21px;
     color: white !important;
     margin: 0 auto;
+    text-transform: unset;
 }
 
 .investogram-ui-button-orange {
@@ -796,6 +830,224 @@ span.required {
 .w-fit-content {
     width: fit-content;
 }
+
+/*************************/
+/* INVESTINDER INFO CARD */
+/*************************/
+
+.investor-name {
+    width: fit-content;
+}
+
+.investinder-card-carousel-layout {
+    overflow-x: hidden;
+    width: 100vw;
+    height: calc(100% - 59px);
+}
+
+.investinder-card-carousel {
+    width: fit-content;
+    height: 100%;
+}
+
+.investinder-info-card-layout {
+    width: 100vw;
+    display: flex;
+}
+
+.investinder-info-card {
+    background: #FAFAFA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 20px 15px;
+    height: calc(100% - 40px);
+    position: relative;
+    overflow: hidden;
+}
+
+.investinder-info-card-content {
+    height: calc(100% - 120px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 20px 20px 0 20px;
+}
+
+.investinder-info-card-header-update-date {
+    margin-right: -5px;
+}
+
+.investinder-info-card-header-update-date p {
+    font-size: 8px;
+    line-height: 9px;
+
+    color: #CBCBCB;
+}
+
+.investinder-info-card-header p {
+    color: #AFAFAF;
+}
+
+.interest-label {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    display: block;
+    width: fit-content;
+}
+
+.interest-label p {
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14px;
+}
+
+.main-info-block-email .letter-icon,
+.main-info-block-phone .phone-icon,
+.main-info-block-telegram .telegram-icon {
+    background-color: #9C9C9C;
+}
+
+.investinder-info-card-main-info-block.active .main-info-block-email .letter-icon,
+.investinder-info-card-main-info-block.active .main-info-block-phone .phone-icon,
+.investinder-info-card-main-info-block.active .main-info-block-telegram .telegram-icon {
+    background-color: #45CE2E;
+}
+
+.investinder-info-card-footer .contact-get {
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #45CE2E;
+    display: none;
+}
+
+.investinder-info-card-footer.active .contact-get {
+    display: flex;
+}
+
+
+
+.investinder-info-card-main-info-block {
+    padding: 15px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.investinder-info-card-main-info-block.active {
+    border-color: #45CE2E;
+}
+
+.main-info-block-description p{
+    color: #545454
+}
+
+.main-info-block-email .letter-icon {
+    width: 20.22px;
+    height: 14.44px;
+    background-size: 20.22px 14.44px;
+    margin-right: 20px;
+}
+
+.main-info-block-phone .phone-icon {
+    width: 19.27px;
+    height: 19.25px;
+    background-size: 19.27px 19.25px;
+    margin-right: 20px;
+}
+
+.main-info-block-telegram .telegram-icon {
+    width: 20px;
+    height: 16.54px;
+    background-size: 20px 16.54px;
+    margin-right: 20px;
+}
+
+.investinder-info-card-sum .info-card-believe-coefficient {
+    margin-right: -5px;
+}
+
+.investinder-info-card-sum .info-card-believe-coefficient p {
+    font-size: 8px;
+    line-height: 9px;
+    color: #FF5050;
+}
+
+.investinder-info-card-header-name .vip-icon {
+    width: 18px;
+    height: 17.17px;
+    background-size: 18px 17.17px;
+    margin-left: 5px;
+}
+
+#buy-contact-button button {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+}
+
+.investinder-info-card-footer-navigation {
+    width: 100%;
+}
+
+#free-contact {
+    width: 48%;
+}
+
+#free-contact button {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+
+}
+
+.prev-page p, .next-page p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #454545;
+}
+
+.prev-page p {
+    margin-left: 4px;
+}
+
+.next-page p {
+    margin-right: 4px;
+}
+
+.investinder-info-card-footer {
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    box-shadow: 0 -4px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px 15px 18px;
+}
+
+.investinder-info-card-header .investinder-info-card-header-name p {
+    color: black;
+}
+
+.investinder-info-card-footer.active {
+    height: 70px;
+}
+
+.investinder-info-card-footer.active ~ .investinder-info-card-content {
+    height: calc(100% - 70px);
+}
+
 
 /**************/
 /* LOGIN FORM */
@@ -1220,6 +1472,10 @@ span.required {
     overflow: scroll;
 }
 
+#add-offer button.btn-primary.investogram-ui-button-small {
+    height: 40px;
+}
+
 #add-offer-title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -1309,19 +1565,4 @@ span.required {
 
 .find-investor-filter-text {
     margin-right: 10px;
-}
-
-.investinder-info-card-layout {
-    width: 100%;
-    height: calc(100% - 59px);
-    display: flex;
-    flex-flow: column;
-}
-
-.investinder-info-card {
-    background: #FAFAFA;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin: 20px 15px;
-    height: 100%;
 }

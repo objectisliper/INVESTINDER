@@ -3,10 +3,57 @@
 function getCharLeftCount(maxLength) {
     const description = $('#add-project-description')[0];
     const charCounter = $('#description-char-count')[0];
-    console.error(description.value);
-    console.error(charCounter);
-    console.error(maxLength - description.value.length);
     charCounter.innerText = maxLength - description.value.length;
+}
+
+function nextCard() {
+
+}
+
+// TODO Just for preview, change on server side rendering
+// currentPage:number
+// return:void
+function previousPage(currentPage) {
+    const cardLayouts = $('.investinder-info-card-layout');
+
+    if (currentPage - 1 >= 0) {
+        cardLayouts.eq(currentPage - 1).animate({
+            marginLeft: '0'
+        }, 500);
+    }
+}
+
+// TODO Just for preview, change on server side rendering
+// currentPage:number
+// return:void
+function nextPage(currentPage) {
+    const cardLayouts = $('.investinder-info-card-layout');
+
+    if (currentPage < cardLayouts.length) {
+        cardLayouts.eq(currentPage).animate({
+            marginLeft: `-100vw`
+        }, 500);
+    }
+}
+
+// TODO Just for preview, change on server side rendering
+// return:void
+function openContacts() {
+    const mainCardBlocks = $('.investinder-info-card-main-info-block');
+    const footer = $('.investinder-info-card-footer');
+    const buttons = $('.investinder-info-card-footer button');
+    const investorNames = $('.investor-name');
+    const emails = $('.main-info-block-email p b');
+    const phones = $('.main-info-block-phone p b');
+    const telegrams = $('.main-info-block-telegram p b');
+
+    for (const item of emails) item.innerText = 'antntelmewe@mail.ru';
+    for (const item of phones) item.innerText = '8(915)825-45-19';
+    for (const item of telegrams) item.innerText = '@antelmewe';
+    for (const item of investorNames) item.innerHTML = '<b>Александр</b> - Частный инвестор';
+    buttons.remove();
+    footer.addClass('active');
+    mainCardBlocks.addClass('active');
 }
 
 // return:void
