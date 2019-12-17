@@ -231,6 +231,30 @@ p {
     background: #545454;
 }
 
+.file-icon {
+    display: block;
+    width: 15px;
+    height: 13.19px;
+    mask: url(../icons/file.svg);
+    -webkit-mask: url(../icons/file.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 15px 13.19px;
+    background: #EBBA16;
+}
+
+.card-back-arrow-icon {
+    display: block;
+    width: 25px;
+    height: 17.58px;
+    mask: url(../icons/card-back-arrow.svg);
+    -webkit-mask: url(../icons/card-back-arrow.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 25px 17.58px;
+    background: #545454;
+}
+
 .add-icon {
     display: block;
     width: 13px;
@@ -265,6 +289,18 @@ p {
     -webkit-mask-size: cover;
     background-size: 19px 18.26px;
     background-color: white;
+}
+
+.investinder-accept-icon {
+    display: none;
+    width: 20px;
+    height: 14.55px;
+    mask: url(../icons/accept.svg);
+    -webkit-mask: url(../icons/accept.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-size: 20px 14.55px;
+    background-color: #45CE2E;
 }
 
 .investinder-close-icon {
@@ -453,6 +489,11 @@ p {
     text-transform: unset;
 }
 
+.investogram-ui-button-blue:disabled, .investogram-ui-button-yellow:disabled,
+.investogram-ui-button-green:disabled, .investogram-ui-button-orange:disabled {
+    background-color: #CBCBCB !important;
+}
+
 .investogram-ui-button-orange {
     background: #FF7A2F !important;
 }
@@ -611,8 +652,6 @@ p {
 }
 
 .investinder-chekbox-label {
-    width: fit-content;
-    height: fit-content;
     padding-left: 0;
 }
 
@@ -631,6 +670,8 @@ p {
     border-radius: 2px;
     display: flex;
     align-items: center;
+    width: fit-content;
+    height: fit-content;
 }
 
 .investinder-chekbox-label input[type='checkbox']:checked ~ label {
@@ -835,6 +876,20 @@ span.required {
 /* INVESTINDER INFO CARD */
 /*************************/
 
+.main-info-block-skype .skype-icon {
+    background: #CBCBCB;
+    width: 20px;
+    height: 19px;
+    margin-right: 20px;
+}
+
+.main-info-block-whatsapp .whatsapp-icon {
+    background: #CBCBCB;
+    width: 20px;
+    height: 19px;
+    margin-right: 20px;
+}
+
 .investor-name {
     width: fit-content;
 }
@@ -909,6 +964,8 @@ span.required {
 
 .investinder-info-card-main-info-block.active .main-info-block-email .letter-icon,
 .investinder-info-card-main-info-block.active .main-info-block-phone .phone-icon,
+.investinder-info-card-main-info-block.active .main-info-block-whatsapp .whatsapp-icon,
+.investinder-info-card-main-info-block.active .main-info-block-skype .skype-icon,
 .investinder-info-card-main-info-block.active .main-info-block-telegram .telegram-icon {
     background-color: #45CE2E;
 }
@@ -1553,7 +1610,6 @@ span.required {
 .find-investor-count, .find-investor-filter-text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 0;
@@ -1562,7 +1618,274 @@ span.required {
 
 }
 
+.find-investor-filter.active .filter-icon {
+    background: #FFC11E;
+}
+
 
 .find-investor-filter-text {
     margin-right: 10px;
+}
+
+
+/*******************/
+/* FILTER INVESTOR */
+/*******************/
+
+#filter-investor {
+    padding: 20px;
+    height: 100%;
+    overflow: scroll;
+}
+
+#filter-investor .investinder-chekbox label {
+    color:  #545454;
+}
+
+#filter-investor .investinder-checkmark-checkbox {
+    left: 0;
+    top: 5px
+}
+
+.filter-investor-header {
+    margin-bottom: 25px;
+}
+
+.filter-investor-header .investinder-close-icon {
+    background: #000000;
+    display: block;
+}
+
+.filter-investor-header .investinder-accept-icon {
+    display: block;
+}
+
+.accept-filter-button {
+    width: 100vw;
+    margin: 0 -20px;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+}
+
+.accept-filter-button button {
+    color: white;
+    height: fit-content;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/********/
+/* COST */
+/********/
+
+#cost {
+    padding: 25px 20px;
+    height: 100%;
+    overflow: scroll;
+}
+
+.cost-description {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin-bottom: 37px;
+
+    color: #545454;
+}
+
+#cost-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #545454;
+    margin-bottom: 20px;
+}
+
+.cost-content-container .cost-label-description {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 5px;
+
+    color: #CBCBCB;
+}
+
+.cost-content-container .cost-block-label {
+    width: 70%;
+}
+
+.cost-content-container .cost-value {
+    width: 30%;
+    text-align: right;
+}
+
+/**********************/
+/* FIND INVESTOR OPEN */
+/**********************/
+
+#find-investor-open {
+    height: 100%;
+}
+
+.find-investor-open-header {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.find-investor-open-header .card-back-arrow-icon {
+    position: absolute;
+    left: 20px;
+}
+
+.find-investor-open-content {
+    padding: 40px;
+}
+
+.find-investor-open-description {
+    color: #9C9C9C;
+}
+
+.find-investor-open-content button {
+    font-size: 14px;
+    line-height: 16px;
+    height: fit-content;
+    min-height: 37px;
+}
+
+/*******************************/
+/* FIND INVESTOR OPEN TELEGRAM */
+/*******************************/
+
+#find-investor-open-telegram {
+    height: 100%;
+}
+
+.find-investor-open-telegram-header {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.find-investor-open-telegram-header .card-back-arrow-icon {
+    position: absolute;
+    left: 20px;
+}
+
+.find-investor-open-telegram-content {
+    padding: 40px;
+}
+
+.find-investor-open-telegram-description {
+    color: #9C9C9C;
+}
+
+.find-investor-open-telegram-content button {
+    font-size: 14px;
+    line-height: 16px;
+    height: fit-content;
+    min-height: 37px;
+}
+
+#find-investor-open-telegram .link-to-message input {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#find-investor-open-telegram .link-to-message input::placeholder {
+    color: #9C9C9C;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/****************/
+/* FIND PROJECT */
+/****************/
+
+#find-project {
+    height: 100%;
+}
+
+.find-project-header {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.find-project-count, .find-project-filter-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 0;
+
+    color: #545454;
+
+}
+
+.find-project-filter.active .filter-icon {
+    background: #FFC11E;
+}
+
+
+.find-project-filter-text {
+    margin-right: 10px;
+}
+
+#find-project .investinder-info-card-header-name p {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#find-project .main-info-block-email .letter-icon,
+#find-project .main-info-block-phone .phone-icon,
+#find-project .main-info-block-telegram .telegram-icon {
+    background-color: #CBCBCB;;
+}
+
+#find-project .investinder-info-card-footer {
+    height: 80px;
+}
+
+#find-project .investinder-info-card-content {
+    height: calc(100% - 80px);
+}
+
+#find-project .investinder-info-card-footer.active {
+    height: 70px;
+}
+
+#find-project .investinder-info-card-footer.active ~ .investinder-info-card-content {
+    height: calc(100% - 70px);
+}
+
+/******************/
+/* FILTER PROJECT */
+/******************/
+
+.search-results p {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #CBCBCB;
+}
+
+.filter-subbuton button {
+    background: #FFC11E;
+    border-radius: 2px;
+    font-size: 14px;
+    width: 100%;
+    line-height: 16px;
 }

@@ -89,22 +89,46 @@
     </div>
 </div>
 <div class="body">
-    <div id="login-form">
-        <h1 id="login-form-title" class="mb-4">Вход в личный кабинет</h1>
-        <form>
-            <div class="form-group mb-4">
-                <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp" placeholder="Email">
-            </div>
-            <div class="form-group mb-4">
-                <input type="password" class="form-control" id="login-password" placeholder="Пароль">
-            </div>
-            <a href="" class="text-right d-block" id="forgot-password">Забыли пароль?</a>
-            <button class="mt-4 mb-4 btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
-                    onclick="login(); return false;">
-                Войти
+    <div id="find-investor-open-telegram">
+        <div class="find-investor-open-telegram-header d-flex justify-content-center align-items-center">
+            <i onclick="returnToPreviousPage()" class="card-back-arrow-icon"></i>
+            <p class="mb-0"><b>Разместить пост в TELEGRAM</b></p>
+        </div>
+        <div class="find-investor-open-telegram-content">
+            <p class="find-investor-open-telegram-description mb-3">
+                <b>Шаг 1.</b> Скопируйте текст ниже.
+            </p>
+            <p class="find-investor-open-telegram-comment mb-4">
+                <i>
+                    Всем привет. Не удаляйте пожалуйста это сообщение,
+                    я хочу бесплатно получить контакт инвестора на Investinder.ru и
+                    я смогу его получить, если сообщение провисит 24 часа. Спасибо!
+                </i>
+            </p>
+            <p class="find-investor-open-telegram-description mb-3">
+                <b>Шаг 2.</b> Перейдите в чат телеграма по ссылке.
+            </p>
+            <button class="mt-auto mb-4 w-100 btn btn-primary investogram-ui-button-yellow investogram-ui-button-small"
+                    onclick="return false;">
+                Перейти в подходящий чат
             </button>
-            <a href="./registration.html" id="registration" class="d-block">Регистрация</a>
-        </form>
+            <p class="find-investor-open-telegram-description mb-3">
+                <b>Шаг 3.</b> Отправьте скопированное сообщение в чат, ничего в нем не изменяя.
+            </p>
+            <p class="find-investor-open-telegram-description mb-3">
+                <b>Шаг 4.</b> Скопируйте ссылку на сообщение и вставьте в поле ниже, затем нажмите “Проверить”.
+            </p>
+            <div class="form-group link-to-message mb-4">
+                <input type="text" class="form-control" id="link" placeholder="Ссылка на сообщение">
+            </div>
+            <button class="mt-auto mb-3 w-100 btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
+                    onclick="return false;">
+                Проверить
+            </button>
+            <p class="find-investor-open-telegram-description mb-4">
+                <b>Шаг 5.</b> Через 24 часа, по истечении таймера, нажмите еще раз на кнопку “Проверить” - контакт станет доступен!
+            </p>
+        </div>
     </div>
 </div>
 <div class="footer"></div>

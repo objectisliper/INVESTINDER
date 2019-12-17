@@ -89,16 +89,19 @@
     </div>
 </div>
 <div class="body">
-    <div id="add-project">
-        <h1 id="add-project-title">Мои проекты</h1>
-        <h3 class="add-project-description">
-            Разместите ваш проект в базе, чтобы его мог найти только настоящий инвестор.<br>Это совершенно бесплатно.
-        </h3>
-        <form>
-            <div class="form-group mb-4">
-                <label for="add-project-name" class="investinder-label">Название проекта <span class="required">*</span></label>
-                <input type="text" class="form-control" id="add-project-name">
+    <div id="filter-investor">
+        <div class="filter-investor-header d-flex justify-content-between align-items-center">
+            <a onclick="clearFilters()" href="./find-project.html" class="close-filters">
+                <i class="investinder-close-icon"></i>
+            </a>
+            <div class="filter-investor-header-text">
+                <p class="mb-0"><b>Применено 3 фильтра</b></p>
             </div>
+            <a href="./find-investor.html" class="filter-investor-accept">
+                <i class="investinder-accept-icon"></i>
+            </a>
+        </div>
+        <form>
             <div class="form-group mb-4 form-group-select">
                 <label for="add-project-region" class="investinder-label">Регион</label>
                 <select type="email" class="form-control" id="add-project-region">
@@ -108,21 +111,6 @@
                     <option value="4" >Москва и область</option>
                 </select>
                 <i class="select-arrow-icon"></i>
-            </div>
-            <div class="form-group mb-4 form-group-select">
-                <label for="add-project-stage" class="investinder-label">Стадия проекта <span class="required">*</span></label>
-                <select type="email" class="form-control" id="add-project-stage">
-                    <option value="1" selected>Задокументированная идея</option>
-                    <option value="2" >Задокументированная идея</option>
-                    <option value="3" >Задокументированная идея</option>
-                    <option value="4" >Задокументированная идея</option>
-                </select>
-                <i class="select-arrow-icon"></i>
-            </div>
-            <div class="form-group mb-4 form-group-with-postfix">
-                <label for="add-project-money-back-date" class="investinder-label">Срок окупаемости <span class="required">*</span></label>
-                <input type="number" class="form-control" id="add-project-money-back-date">
-                <span class="input-postfix">месяцев</span>
             </div>
             <div class="form-group mb-4">
                 <p class="position-relative investinder-label w-fit-content">Сфера проекта<span class="required">*</span></p>
@@ -165,66 +153,137 @@
                     </div>
                 </fieldset>
             </div>
-            <div class="form-group mb-4 form-check investinder-chekbox">
-                <label class="investinder-label">Наличие юр. лица
-                    <input type="checkbox" class="form-control">
-                    <span class="investinder-checkmark-checkbox"></span>
-                    <small class="form-text text-muted investinder-form-text">
-                        Имеется ли у вашей команды/стартапа/проекта <br> зарегистрированное юр.лицо или нет.
-                    </small>
-                </label>
-            </div>
-            <div class="form-group mb-4 form-group-with-postfix">
-                <label for="add-project-description" class="investinder-label">
-                    Краткое описание проекта <span class="required">*</span>
-                </label>
-                <input type="text" class="form-control" id="add-project-description" maxlength="170"
-                       onkeyup="getCharLeftCount(170)">
-                <span class="input-postfix" id="description-char-count">170</span>
-            </div>
-            <div class="form-group">
-                <label for="project-presentation" class="investinder-label">
-                    Презентация проекта
-                    <span class="investinder-form-control-file">
-                        <input type="file" class="form-control-file" id="project-presentation">
-                        <i class="add-icon"></i>
-                        Добавить файл
-                    </span>
-                    <small class="form-text text-muted investinder-form-text">
-                        Не более 10 МБ. Допускаются к загрузке файлы формата PDF/JPEG/RAR/ZIP.
-                    </small>
-                </label>
+            <div class="form-group mb-4 form-group-select">
+                <label for="add-project-region" class="investinder-label">Требуется инвестиций</label>
+                <select type="email" class="form-control" id="add-project-region">
+                    <option value="1" selected>до 500 000 рублей</option>
+                    <option value="2" >Москва и область</option>
+                    <option value="3" >Москва и область</option>
+                    <option value="4" >Москва и область</option>
+                </select>
+                <i class="select-arrow-icon"></i>
             </div>
             <div class="form-group mb-4">
-                <p class="position-relative investinder-label w-fit-content">Контакты</p>
-                <fieldset id="contacts">
-                    <div class="form-group mb-4 icon-input">
-                        <i class="prefix-icon letter-icon" style="background: #CBCBCB;"></i>
-                        <input type="text" class="form-control" id="contacts-email" aria-describedby="emailHelp">
-                        <span class="required" style="right: 0">*</span>
+                <p class="position-relative investinder-label w-fit-content">
+                    Стадия проекта
+                </p>
+                <fieldset>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Любая
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
                     </div>
-                    <div class="form-group mb-4 icon-input">
-                        <i class="prefix-icon phone-icon" style="background: #CBCBCB;"></i>
-                        <input type="text" class="form-control" id="contacts-phone" aria-describedby="emailHelp">
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Задокументированная идея
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
                     </div>
-                    <div class="form-group mb-4 icon-input">
-                        <i class="prefix-icon whatsapp-icon" style="background: #CBCBCB;"></i>
-                        <input type="text" class="form-control" id="contacts-whatsapp" aria-describedby="emailHelp">
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Бизнес-модель
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
                     </div>
-                    <div class="form-group mb-4 icon-input">
-                        <i class="prefix-icon telegram-icon" style="background: #CBCBCB;"></i>
-                        <input type="text" class="form-control" id="contacts-telegram" aria-describedby="emailHelp">
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Есть MVP
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
                     </div>
-                    <div class="form-group mb-4 icon-input">
-                        <i class="prefix-icon skype-icon" style="background: #CBCBCB;"></i>
-                        <input type="text" class="form-control" id="contacts-skype" aria-describedby="emailHelp">
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Есть подтвержденный спрос
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Первые продажи
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Действующий бизнес
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Стагнирующий бизнес
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Pivot
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
                     </div>
                 </fieldset>
             </div>
-            <button class="mt-auto btn btn-primary investogram-ui-button-yellow investogram-ui-button-small"
-                    onclick="return false;">
-                Разместить проект
-            </button>
+            <div class="form-group mb-4 form-group-select">
+                <label for="add-project-region" class="investinder-label">Срок окупаемости</label>
+                <select type="email" class="form-control" id="add-project-region">
+                    <option value="1" selected>12 - 24 месяца</option>
+                    <option value="2" >Москва и область</option>
+                    <option value="3" >Москва и область</option>
+                    <option value="4" >Москва и область</option>
+                </select>
+                <i class="select-arrow-icon"></i>
+            </div>
+            <div class="form-group mb-3">
+                <fieldset>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Приложена презентация
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">Есть юр.лицо
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">В контактах указан телефон
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="form-group form-check investinder-chekbox mb-3">
+                        <label class="investinder-label">В контактах указан мессенджер
+                            <input type="checkbox" class="form-control">
+                            <span class="investinder-checkmark-checkbox"></span>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="search-results mb-3">
+                <p class="mb-0">Найдено 54 подходящих проекта</p>
+            </div>
+            <div class="accept-filter-button">
+                <button class="mt-auto btn btn-primary investogram-ui-button-green investogram-ui-button-small"
+                        onclick="acceptFilters(); return false;">
+                    Применить фильтры
+                </button>
+            </div>
+            <hr class="mt-0">
+            <div class="filter-subbuton mb-2">
+                <button class="mt-auto btn btn-primary investogram-ui-button-yellow investogram-ui-button-small"
+                        onclick="return false;">
+                    Доступ без ограничений
+                </button>
+            </div>
+            <div class="search-results">
+                <p class="mb-0">
+                    Получите доступ к любому проекту в базе с возможностью просмотра любых
+                    контактов и презентаций всего за 2 490 рублей.
+                </p>
+            </div>
         </form>
     </div>
 </div>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-material-design-dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="../assets/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap-material-design-dist/js/bootstrap-material-design.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</head>
+<body>
+<div class="head">
+    <nav class="d-flex justify-content-between align-items-center bg-black investinder-header">
+        <a class="navbar-brand" href="main-page.html">
+            <div class="investinder-logo">
+                <i class="horse-icon"></i>
+            </div>
+            <p class="brand-name">INVESTINDER</p>
+        </a>
+        <div id="investinder-toggler" onclick="togglePageList()">
+            <span class="investinder-toggle-icon" id="navigation-open"></span>
+            <span class="investinder-close-icon" id="navigation-close"></span>
+        </div>
+    </nav>
+    <div id="navigation-page-list" class="flex-column justify-content-between">
+        <ul class="navigation-blocks list-unstyled active" id="unauth-navigation">
+            <li class="navigation-path">
+                <a href="">Войти в аккаунт</a>
+            </li>
+            <li class="navigation-path">
+                <a href="./find-investor.html">Искать инвестора</a>
+            </li>
+            <li class="navigation-path">
+                <a href="./find-project.html">Смотреть проекты</a>
+            </li>
+            <li class="navigation-path">
+                <a href="./cost.html">Цены</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Блог</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Обратная связь</a>
+            </li>
+        </ul>
+        <ul class="navigation-blocks list-unstyled" id="auth-navigation">
+            <li class="navigation-path yellow-label">
+                <a href="./add-project.html">Добавить проект</a>
+            </li>
+            <li class="navigation-path blue-label">
+                <a href="./add-offer.html">Предложить инвестиции</a>
+            </li>
+            <li class="navigation-path">
+                <a href="./personal-cabinet.html">Личный кабинет</a>
+            </li>
+            <li class="navigation-path">
+                <a href="./find-investor.html">Искать инвестора</a>
+            </li>
+            <li class="navigation-path">
+                <a href="./find-project.html">Смотреть проекты</a>
+            </li>
+            <li class="navigation-path">
+                <a href="./cost.html">Цены</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Блог</a>
+            </li>
+            <li class="navigation-path">
+                <a href="">Обратная связь</a>
+            </li>
+        </ul>
+        <div class="information d-flex flex-column">
+            <a href="" class="information-block">Политика конфиденциальности</a>
+            <a href="" class="information-block">О проекте</a>
+            <a href="" class="information-block">Контакты</a>
+        </div>
+    </div>
+</div>
+<div class="body">
+    <div id="find-project">
+        <div class="find-project-header d-flex justify-content-between align-items-center">
+            <p class="find-project-count">Найдено 3234 предложений</p>
+            <a href="./filter-project.html" class="find-project-filter d-flex">
+                <div class="find-project-filter-text"><b>Фильтр</b></div>
+                <i class="filter-icon"></i>
+            </a>
+        </div>
+        <div class="investinder-card-carousel-layout">
+            <div class="investinder-card-carousel d-flex">
+                <div class="investinder-info-card-layout">
+                    <div class="investinder-info-card d-flex flex-column flex-column-reverse">
+                        <div class="investinder-info-card-footer d-flex flex-column justify-content-between">
+                            <div class="investinder-info-card-footer-navigation d-flex justify-content-between">
+                                <div class="prev-page d-flex align-items-center">
+                                    <i class="prev-page-icon"></i>
+                                    <p class="mb-0">Назад</p>
+                                </div>
+                                <div id="free-contact" class="d-flex align-items-center justify-content-center">
+                                    <button class="mt-auto h-auto btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
+                                            onclick="openContacts()">
+                                        Открыть контакты
+                                        (390 руб)
+                                    </button>
+                                    <p class="contact-get mb-0">
+                                        Контакт получен!
+                                    </p>
+                                </div>
+                                <div class="next-page d-flex align-items-center"  onclick="nextPage(0)">
+                                    <p class="mb-0">Далее</p>
+                                    <i class="next-page-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="investinder-info-card-content">
+                            <div class="investinder-info-card-header d-flex justify-content-between align-items-center mb-3">
+                                <div class="investinder-info-card-header-name d-flex">
+                                    <p class="mb-0"><b>"Лазурин"</b></p>
+                                </div>
+                                <div class="investinder-info-card-header-update-date">
+                                    <p class="mb-0">Без юр.лица</p>
+                                </div>
+                            </div>
+                            <div class="project-description mb-4">
+                                <p class="mb-0">
+                                    Проект системы обучения нейрохирургов - инновационный тренажер.
+                                    Есть инженерный прототип и расчеты! Нужны средства на полноценные
+                                    испытания!
+                                </p>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Требуется инвестиций</p>
+                            </div>
+                            <div class="investinder-info-card-sum d-flex w-100 justify-content-between align-items-center mb-4">
+                                <div class="info-card-value">
+                                    <p class="mb-0">8 000 000 рублей</p>
+                                </div>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Регион</p>
+                            </div>
+                            <div class="mb-4 d-flex">
+                                <p class="mb-0">Москва и область</p>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Сфера проекта:</p>
+                            </div>
+                            <div class="mb-3 d-flex flex-wrap w-100">
+                                <div class="interest-label" style="background: #1EC9E8; color: white">
+                                    <p class="mb-0">IT</p>
+                                </div>
+                                <div class="interest-label" style="background: #FF7A2F; color: white">
+                                    <p class="mb-0">Строительство</p>
+                                </div>
+                                <div class="interest-label" style="background: #76FEC5;">
+                                    <p class="mb-0">Медицина</p>
+                                </div>
+                                <div class="interest-label" style="background: #E85668; color: white">
+                                    <p class="mb-0">Обучение</p>
+                                </div>
+                                <div class="interest-label" style="background: #FE9E76; color: white">
+                                    <p class="mb-0">Ритейл</p>
+                                </div>
+                                <div class="interest-label" style="background: #FFD600;">
+                                    <p class="mb-0">Спорт</p>
+                                </div>
+                                <div class="interest-label" style="background: #5BFF62;">
+                                    <p class="mb-0">Туризм</p>
+                                </div>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Стадия проекта</p>
+                            </div>
+                            <div class="mb-4 d-flex">
+                                <p class="mb-0">Бизнес-модель</p>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Срок окупаемости</p>
+                            </div>
+                            <div class="mb-4 d-flex">
+                                <p class="mb-0">24 месяца</p>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Презентация проекта</p>
+                            </div>
+                            <div class="mb-4 d-flex">
+                                <i class="file-icon mr-1"></i>
+                                <p class="mb-0">
+                                    Some_file.pptx (4.32 mb)
+                                </p>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Контакты</p>
+                            </div>
+                            <div class="main-info-block-email d-flex mb-3">
+                                <i class="letter-icon"></i>
+                                <p class="mb-0"><b>ant****e@m**l.ru</b></p>
+                            </div>
+                            <div class="main-info-block-phone d-flex mb-3">
+                                <i class="phone-icon" style=""></i>
+                                <p class="mb-0"><b>8(915)8**-**-*9</b></p>
+                            </div>
+                            <div class="main-info-block-whatsapp d-flex mb-3">
+                                <i class="whatsapp-icon" style=""></i>
+                                <p class="mb-0"><b>8(915)8**-**-*9</b></p>
+                            </div>
+                            <div class="main-info-block-telegram d-flex mb-3">
+                                <i class="telegram-icon"></i>
+                                <p class="mb-0"><b>@a*******e</b></p>
+                            </div>
+                            <div class="main-info-block-skype d-flex mb-4">
+                                <i class="skype-icon" style=""></i>
+                                <p class="mb-0"><b>ve**-**-*</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="investinder-info-card-layout">
+                    <div class="investinder-info-card d-flex flex-column flex-column-reverse">
+                        <div class="investinder-info-card-footer d-flex flex-column justify-content-between">
+                            <div class="investinder-info-card-footer-navigation d-flex justify-content-between">
+                                <div class="prev-page d-flex align-items-center" onclick="previousPage(1)">
+                                    <i class="prev-page-icon"></i>
+                                    <p class="mb-0">Назад</p>
+                                </div>
+                                <div id="free-contact" class="d-flex align-items-center justify-content-center">
+                                    <button class="mt-auto h-auto btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
+                                            onclick="openContacts()">
+                                        Открыть контакты
+                                        (390 руб)
+                                    </button>
+                                    <p class="contact-get mb-0">
+                                        Контакт получен!
+                                    </p>
+                                </div>
+                                <div class="next-page d-flex align-items-center">
+                                    <p class="mb-0">Далее</p>
+                                    <i class="next-page-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="investinder-info-card-content">
+                            <div class="investinder-info-card-header d-flex justify-content-between align-items-center mb-3">
+                                <div class="investinder-info-card-header-name d-flex">
+                                    <p class="mb-0"><b>"Лазурин"</b></p>
+                                </div>
+                                <div class="investinder-info-card-header-update-date">
+                                    <p class="mb-0">Без юр.лица</p>
+                                </div>
+                            </div>
+                            <div class="project-description mb-4">
+                                <p class="mb-0">
+                                    Проект системы обучения нейрохирургов - инновационный тренажер.
+                                    Есть инженерный прототип и расчеты! Нужны средства на полноценные
+                                    испытания!
+                                </p>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Требуется инвестиций</p>
+                            </div>
+                            <div class="investinder-info-card-sum d-flex w-100 justify-content-between align-items-center mb-4">
+                                <div class="info-card-value">
+                                    <p class="mb-0">8 000 000 рублей</p>
+                                </div>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Регион</p>
+                            </div>
+                            <div class="mb-4 d-flex">
+                                <p class="mb-0">Москва и область</p>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Сфера проекта:</p>
+                            </div>
+                            <div class="mb-3 d-flex flex-wrap w-100">
+                                <div class="interest-label" style="background: #1EC9E8; color: white">
+                                    <p class="mb-0">IT</p>
+                                </div>
+                                <div class="interest-label" style="background: #FF7A2F; color: white">
+                                    <p class="mb-0">Строительство</p>
+                                </div>
+                                <div class="interest-label" style="background: #76FEC5;">
+                                    <p class="mb-0">Медицина</p>
+                                </div>
+                                <div class="interest-label" style="background: #E85668; color: white">
+                                    <p class="mb-0">Обучение</p>
+                                </div>
+                                <div class="interest-label" style="background: #FE9E76; color: white">
+                                    <p class="mb-0">Ритейл</p>
+                                </div>
+                                <div class="interest-label" style="background: #FFD600;">
+                                    <p class="mb-0">Спорт</p>
+                                </div>
+                                <div class="interest-label" style="background: #5BFF62;">
+                                    <p class="mb-0">Туризм</p>
+                                </div>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Стадия проекта</p>
+                            </div>
+                            <div class="mb-4 d-flex">
+                                <p class="mb-0">Бизнес-модель</p>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Срок окупаемости</p>
+                            </div>
+                            <div class="mb-4 d-flex">
+                                <p class="mb-0">24 месяца</p>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Презентация проекта</p>
+                            </div>
+                            <div class="mb-4 d-flex">
+                                <i class="file-icon mr-1"></i>
+                                <p class="mb-0">
+                                    Some_file.pptx (4.32 mb)
+                                </p>
+                            </div>
+                            <div class="investinder-info-card-header mb-1">
+                                <p class="mb-0">Контакты</p>
+                            </div>
+                            <div class="main-info-block-email d-flex mb-3">
+                                <i class="letter-icon"></i>
+                                <p class="mb-0"><b>ant****e@m**l.ru</b></p>
+                            </div>
+                            <div class="main-info-block-phone d-flex mb-3">
+                                <i class="phone-icon" style=""></i>
+                                <p class="mb-0"><b>8(915)8**-**-*9</b></p>
+                            </div>
+                            <div class="main-info-block-whatsapp d-flex mb-3">
+                                <i class="whatsapp-icon" style=""></i>
+                                <p class="mb-0"><b>8(915)8**-**-*9</b></p>
+                            </div>
+                            <div class="main-info-block-telegram d-flex mb-3">
+                                <i class="telegram-icon"></i>
+                                <p class="mb-0"><b>@a*******e</b></p>
+                            </div>
+                            <div class="main-info-block-skype d-flex mb-4">
+                                <i class="skype-icon" style=""></i>
+                                <p class="mb-0"><b>ve**-**-*</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+</html>

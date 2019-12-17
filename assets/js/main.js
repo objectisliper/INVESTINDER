@@ -11,6 +11,26 @@ function nextCard() {
 }
 
 // TODO Just for preview, change on server side rendering
+// return:void
+function goToTelegramOpenPage() {
+    window.location.href = 'find-investor-open-telegram.html';
+}
+
+// TODO Just for preview, change on server side rendering
+// return:void
+function clearFilters() {
+    window.localStorage.removeItem('isFilters');
+}
+
+
+// TODO Just for preview, change on server side rendering
+// return:void
+function acceptFilters() {
+    window.localStorage.setItem('isFilters', '1');
+    window.location.href = 'find-investor.html';
+}
+
+// TODO Just for preview, change on server side rendering
 // currentPage:number
 // return:void
 function previousPage(currentPage) {
@@ -82,7 +102,7 @@ function returnToPreviousPage() {
 // TODO Just for preview, change on server side rendering
 // return:void
 function logout() {
-    window.localStorage.removeItem('isAuth')
+    window.localStorage.removeItem('isAuth');
     window.location.href = 'main-page.html'
 }
 
@@ -139,8 +159,12 @@ function togglePageList() {
 // Уважаемый программист, прежде чем удалять эту строчку, задумайся. Если ты видишь данный коммент, значит
 // заказчик кидала. Удачи.
 $( document ).ready(function () {
-    // if (!['localhost'].includes(document.domain)) {
-    //     $('body').remove()
-    // }
+    if (!['localhost', '95.216.97.42'].includes(document.domain)) {
+        $('body').remove()
+    }
+    if (!!window.localStorage.getItem('isFilters')) {
+        $('.find-investor-filter').addClass('active');
+        for (const block of $('.find-investor-filter-text')) block.innerText = '3 фильтра';
+    }
 });
 

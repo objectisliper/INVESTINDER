@@ -89,22 +89,32 @@
     </div>
 </div>
 <div class="body">
-    <div id="login-form">
-        <h1 id="login-form-title" class="mb-4">Вход в личный кабинет</h1>
-        <form>
-            <div class="form-group mb-4">
-                <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp" placeholder="Email">
-            </div>
-            <div class="form-group mb-4">
-                <input type="password" class="form-control" id="login-password" placeholder="Пароль">
-            </div>
-            <a href="" class="text-right d-block" id="forgot-password">Забыли пароль?</a>
-            <button class="mt-4 mb-4 btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
-                    onclick="login(); return false;">
-                Войти
+    <div id="find-investor-open">
+        <div class="find-investor-open-header d-flex justify-content-center align-items-center">
+            <i onclick="returnToPreviousPage()" class="card-back-arrow-icon"></i>
+            <p class="mb-0"><b>Как открыть контакт бесплатно?</b></p>
+        </div>
+        <div class="find-investor-open-content">
+            <p class="find-investor-open-description mb-4">
+                1. Бесплатно открыть контакт можно только один раз. <br>
+                2. Чтобы получить доступ к контакту, нужно сделать разместить в своей социальной сети репост через любую из кнопок ниже.
+                <br>
+                3. Если через 24 часа пост останется на Вашей стене в сети - контакт станет полностью доступен. <br>
+            </p>
+            <button class="mt-auto mb-3 w-100 btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
+                    onclick="return false;"
+                    disabled="disabled">
+                Разместить пост в VK (использовано)
             </button>
-            <a href="./registration.html" id="registration" class="d-block">Регистрация</a>
-        </form>
+            <button class="mt-auto mb-3 w-100 btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
+                    onclick="return false;">
+                Разместить пост в FACEBOOK
+            </button>
+            <button class="mt-auto mb-3 w-100 btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
+                    onclick="goToTelegramOpenPage(); return false;">
+                Разместить пост в TELEGRAM
+            </button>
+        </div>
     </div>
 </div>
 <div class="footer"></div>
