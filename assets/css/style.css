@@ -12,6 +12,8 @@ p {
 }
 
 .body {
+    height: -moz-calc(100vh - 56px);
+    height: -webkit-calc(100vh - 56px);
     height: calc(100vh - 56px);
     position: relative;
 }
@@ -330,6 +332,8 @@ p {
 }
 
 #navigation-page-list {
+    height: -moz-calc(100vh - 56px);
+    height: -webkit-calc(100vh - 56px);
     height: calc(100vh - 56px);
     background-color: white;
     width: 68vw;
@@ -897,6 +901,8 @@ span.required {
 .investinder-card-carousel-layout {
     overflow-x: hidden;
     width: 100vw;
+    height: -moz-calc(100% - 59px);
+    height: -webkit-calc(100% - 59px);
     height: calc(100% - 59px);
 }
 
@@ -907,6 +913,8 @@ span.required {
 
 .investinder-info-card-layout {
     width: 100vw;
+    height: -moz-calc(100% - 59px);
+    height: -webkit-calc(100% - 59px);
     height: calc(100% - 59px);
     display: flex;
 }
@@ -916,6 +924,8 @@ span.required {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     margin: 20px 15px;
+    height: -moz-calc(100% - 40px);
+    height: -webkit-calc(100% - 40px);
     height: calc(100% - 40px);
     position: relative;
     overflow: hidden;
