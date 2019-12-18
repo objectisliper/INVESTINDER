@@ -907,6 +907,7 @@ span.required {
 
 .investinder-info-card-layout {
     width: 100vw;
+    height: calc(100% - 59px);
     display: flex;
 }
 
@@ -920,11 +921,15 @@ span.required {
     overflow: hidden;
 }
 
-.investinder-info-card-content {
+.investinder-info-card-content-layout {
     height: calc(100% - 120px);
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.investinder-info-card-content {
     padding: 20px 20px 0 20px;
+    width: calc(100vw - 30px);
 }
 
 .investinder-info-card-header-update-date {
@@ -1633,7 +1638,7 @@ span.required {
 /*******************/
 
 #filter-investor {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     height: 100%;
     overflow: scroll;
 }
@@ -1663,7 +1668,7 @@ span.required {
 .accept-filter-button {
     width: 100vw;
     margin: 0 -20px;
-    padding: 20px;
+    padding: 20px 20px 60px 20px;
     position: sticky;
     bottom: 0;
 }
@@ -1858,7 +1863,7 @@ span.required {
     height: 80px;
 }
 
-#find-project .investinder-info-card-content {
+#find-project .investinder-info-card-content-layout {
     height: calc(100% - 80px);
 }
 
@@ -1866,7 +1871,7 @@ span.required {
     height: 70px;
 }
 
-#find-project .investinder-info-card-footer.active ~ .investinder-info-card-content {
+#find-project .investinder-info-card-footer.active ~ .investinder-info-card-content-layout {
     height: calc(100% - 70px);
 }
 

@@ -31,29 +31,22 @@ function acceptFilters() {
 }
 
 // TODO Just for preview, change on server side rendering
-// currentPage:number
 // return:void
-function previousPage(currentPage) {
-    const cardLayouts = $('.investinder-info-card-layout');
+function previousPage() {
+    const cardLayouts = $('.investinder-info-card-content');
 
-    if (currentPage - 1 >= 0) {
-        cardLayouts.eq(currentPage - 1).animate({
-            marginLeft: '0'
-        }, 500);
-    }
+    cardLayouts.eq(0).animate({
+        marginLeft: '0'
+    }, 500);
 }
 
 // TODO Just for preview, change on server side rendering
-// currentPage:number
 // return:void
-function nextPage(currentPage) {
-    const cardLayouts = $('.investinder-info-card-layout');
-
-    if (currentPage < cardLayouts.length) {
-        cardLayouts.eq(currentPage).animate({
-            marginLeft: `-100vw`
-        }, 500);
-    }
+function nextPage() {
+    const cardLayouts = $('.investinder-info-card-content');
+    cardLayouts.eq(0).animate({
+        marginLeft: `-${window.innerWidth - 30}px`
+    }, 500);
 }
 
 // TODO Just for preview, change on server side rendering
