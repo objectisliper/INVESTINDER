@@ -1106,7 +1106,7 @@ span.required {
     height: 70px;
 }
 
-.investinder-info-card-footer.active ~ .investinder-info-card-content {
+.investinder-info-card-footer.active ~ .investinder-info-card-content-layout {
     height: calc(100% - 70px);
 }
 
