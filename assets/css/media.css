@@ -15,6 +15,7 @@
 
     #navigation-page-list {
         overflow: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .find-investor .block-headliner, .find-project .block-headliner {

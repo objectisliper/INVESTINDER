@@ -1358,6 +1358,7 @@ span.required {
     padding: 20px;
     height: 100%;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 #personal-cabinet-projects .investogram-ui-button-yellow,
