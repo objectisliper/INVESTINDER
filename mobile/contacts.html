@@ -19,6 +19,7 @@
     <script src="../assets/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
     <script src="../assets/bootstrap-material-design-dist/js/bootstrap-material-design.min.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <div class="head">
@@ -89,32 +90,47 @@
     </div>
 </div>
 <div class="body">
-    <div id="find-investor-open">
-        <div class="find-investor-open-header d-flex justify-content-center align-items-center">
-            <i onclick="returnToPreviousPage()" class="card-back-arrow-icon"></i>
-            <p class="mb-0"><b>Как открыть контакт бесплатно?</b></p>
+    <div id="contacts">
+        <h1 class="contacts-title w-100">
+            КОНТАКТЫ
+        </h1>
+        <p class="contacts-description">
+            Связаться с нами вы можете тремя различными способами:
+        </p>
+        <div class="contacts-telegram mb-4">
+            <div class="contacts-telegram-info d-flex justify-content-between mb-2">
+                <p class="mb-0"><b>Telegram</b></p>
+                <p class="mb-0">@investinder</p>
+            </div>
+            <div class="small-description">
+                Любые обращения, пожелания, вопросы, критика.
+            </div>
         </div>
-        <div class="find-investor-open-content">
-            <p class="find-investor-open-description mb-4">
-                1. Бесплатно открыть контакт можно только один раз. <br>
-                2. Чтобы получить доступ к контакту, нужно сделать разместить в своей социальной сети репост через любую из кнопок ниже.
-                <br>
-                3. Если через 24 часа пост останется на Вашей стене в сети - контакт станет полностью доступен. <br>
-            </p>
-            <button class="mt-auto mb-3 w-100 btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
-                    onclick="return false;"
-                    disabled="disabled">
-                Разместить пост в VK (использовано)
-            </button>
-            <button class="mt-auto mb-3 w-100 btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
-                    onclick="return false;">
-                Разместить пост в FACEBOOK
-            </button>
-            <button class="mt-auto mb-3 w-100 btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
-                    onclick="goToTelegramOpenPage(); return false;">
-                Разместить пост в TELEGRAM
-            </button>
+        <div class="contacts-email mb-4">
+            <div class="contacts-email-info d-flex justify-content-between mb-2">
+                <p class="mb-0"><b>Email</b></p>
+                <p class="mb-0">all@investinder.ru</p>
+            </div>
+            <div class="small-description">
+                Эффективно, когда возникли проблемы с платежом или работой системы.
+            </div>
         </div>
+        <form class="d-flex flex-column">
+            <div class="form-group mb-4">
+                <input type="text" class="form-control" id="contact-name" aria-describedby="emailHelp" placeholder="Имя">
+            </div>
+            <div class="form-group mb-4">
+                <input type="email" class="form-control" id="contact-email" aria-describedby="emailHelp" placeholder="Ваш Email или телефон">
+            </div>
+            <div class="form-group mb-4">
+                <input type="text" class="form-control" id="contact-message" aria-describedby="emailHelp" placeholder="Ваше сообщение">
+            </div>
+            <div class="g-recaptcha d-flex justify-content-center" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+            <button class="mt-4 mb-4 btn btn-primary investogram-ui-button-blue investogram-ui-button-small"
+                    onclick="login(); return false;">
+                Отправить
+            </button>
+        </form>
     </div>
 </div>
 <div class="footer"></div>

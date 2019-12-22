@@ -1905,3 +1905,169 @@ span.required {
     width: 100%;
     line-height: 16px;
 }
+
+/********/
+/* BLOG */
+/********/
+
+#blog {
+    height: 100%;
+    padding: 35px 25px 25px;
+}
+
+.blog-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: center;
+    margin-bottom: 36px;
+
+    color: #545454;
+}
+
+.blog-card-footer {
+    margin-bottom: 30px;
+}
+
+.blog-card-create-date {
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #CBCBCB;
+}
+
+.blog-card-detail-link {
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+
+    color: #545454;
+
+}
+
+/*************/
+/* BLOG NOTE */
+/*************/
+
+#blog-note {
+    height: 100%;
+    padding: 35px 25px 25px;
+}
+
+.blog-note-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: center;
+    margin-bottom: 13px;
+
+    color: #545454;
+}
+
+.blog-note-create-date {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    margin-bottom: 13px;
+
+    color: #CBCBCB;
+}
+
+/*************/
+/* ABOUT */
+/*************/
+
+#about {
+    height: 100%;
+    padding: 35px 25px 25px;
+}
+
+.about-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: center;
+    margin-bottom: 36px;
+
+    color: #545454;
+}
+
+/******************/
+/* PRIVACY POLICY */
+/******************/
+
+#privacy-policy {
+    height: 100%;
+    padding: 35px 25px 25px;
+}
+
+.privacy-policy-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: center;
+    margin-bottom: 36px;
+
+    color: #545454;
+}
+
+/************/
+/* CONTACTS */
+/************/
+
+#contacts {
+    height: 100%;
+    padding: 35px 25px 25px;
+}
+
+.contacts-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: center;
+    margin-bottom: 36px;
+
+    color: #545454;
+}
+
+.contacts-description {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #545454;
+    margin-bottom: 30px;
+}
+
+.small-description {
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #AFAFAF;
+}
+
+#contacts .investogram-ui-button-blue {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    width: 304px;
+    margin: 0 -25px;
+    align-self: center;
+
+}
